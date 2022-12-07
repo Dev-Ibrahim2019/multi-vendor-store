@@ -1,0 +1,359 @@
+.light-header {
+  &.transparent-theme .main-sidebar-header {
+    background: $transparent-body;
+  }
+  .main-header.side-header.sticky.nav.nav-item.fixed-header.visible-title.sticky-pin {
+    background: $white;
+  }
+  .main-header-center .btn:hover {
+    color: #b4bdce;
+  }
+  .main-header {
+    background: $white !important;
+    border-bottom-color: $border !important;
+    box-shadow: none;
+  }
+  .header-icon {
+    color: #a8b1c7;
+  }
+  .close-toggle {
+    color: #a8b1c7 !important;
+  }
+  .layout-setting .header-icon-svgs,
+  .resp-btn .header-icon-svgs,
+  .demo-icon .header-icon-svgs {
+    fill: #5b6e88;
+  }
+  .header-icon-svgs {
+    color: #5b6e88;
+  }
+  @media (min-width: 992px) {
+    .main-header-left .form-control {
+      background: $background !important;
+      border-color: $border;
+    }
+    .hor-header.sticky-pin {
+      &.main-header {
+        background: transparent;
+        box-shadow: none;
+        border-bottom: 0 !important;
+      }
+    }
+  }
+
+  .form-control::placeholder {
+    color: $default-color !important;
+  }
+  @media (min-width: 992px) {
+    &.horizontal .hor-header .logo-1 {
+      display: block !important;
+    }
+    &.horizontal .hor-header .dark-logo-1 {
+      display: none !important;
+    }
+    .horizontal .app-sidebar {
+      border-top-color: $border;
+    }
+  }
+  .form-control {
+    color: $default-color;
+  }
+  @media (max-width: 991px) {
+    .responsive-logo .header-logo .dark-logo-1 {
+      display: none;
+    }
+    .responsive-logo .header-logo .logo-1 {
+      display: block;
+    }
+    .responsive-navbar.navbar .navbar-collapse {
+      background: $white;
+      border-bottom-color: $border;
+      border-top-color: $border;
+    }
+  }
+  .navbar-toggler-icon {
+    color: #5b6e88;
+  }
+  @media (min-width: 992px) {
+    .main-header-left .btn {
+      color: #b4bdce !important;
+    }
+    .main-header.hor-header {
+      border-bottom-color: #eae8f1 !important;
+    }
+  }
+}
+
+.color-header {
+  &.transparent-theme .main-sidebar-header {
+    background: $primary;
+  }
+  .main-header.side-header.sticky.nav.nav-item.fixed-header.visible-title.sticky-pin {
+    background: $primary;
+  }
+  .main-header-center .btn:hover {
+    color: $white;
+  }
+  .main-header {
+    background: $primary !important;
+    border-bottom-color: $transparent-border !important;
+    box-shadow: none;
+  }
+  .header-icon {
+    color: $white;
+  }
+  .close-toggle {
+    color: $white !important;
+  }
+  .layout-setting .header-icon-svgs,
+  .resp-btn .header-icon-svgs,
+  .demo-icon .header-icon-svgs {
+    fill: $white;
+  }
+  .header-icon-svgs {
+    color: $white;
+  }
+  @media (min-width: 992px) {
+    .main-header-left .form-control {
+      background: $transparent-theme !important;
+      border-color: $transparent-border;
+    }
+    .hor-header.sticky-pin {
+      &.main-header {
+        background: transparent;
+        box-shadow: none;
+        border-bottom: 0 !important;
+      }
+    }
+  }
+
+  .form-control::placeholder {
+    color: $transparent-color !important;
+  }
+  @media (min-width: 992px) {
+    .main-header-left .btn {
+      color: $transparent-color;
+    }
+  }
+  @media (min-width: 992px) {
+    &.horizontal .hor-header .logo-1 {
+      display: none !important;
+    }
+    &.horizontal .hor-header .dark-logo-1 {
+      display: block !important;
+    }
+    .horizontal .app-sidebar {
+      border-top-color: $transparent-border;
+    }
+  }
+  .form-control {
+    color: $white;
+  }
+  @media (min-width: 576px) {
+    .main-header .dropdown-menu:after {
+      border-bottom-color: $white;
+    }
+  }
+  @media (max-width: 991px) {
+    .responsive-logo .header-logo .dark-logo-1 {
+      display: block;
+    }
+    .responsive-logo .header-logo .logo-1 {
+      display: none;
+    }
+    .responsive-navbar.navbar .navbar-collapse {
+      background: $primary;
+      border-bottom-color: $transparent-border;
+      border-top-color: $transparent-border;
+    }
+  }
+  .navbar-toggler-icon {
+    color: $white;
+  }
+  @media (min-width: 992px) {
+    .main-header-left .btn {
+      color: $white  !important;
+    }
+  }
+}
+
+.dark-header {
+  &.transparent-theme .main-sidebar-header {
+    background: $primary;
+  }
+  .main-header.side-header.sticky.nav.nav-item.fixed-header.visible-title.sticky-pin {
+    background: $dark-theme;
+  }
+  .main-header-center .btn:hover {
+    color: $dark-color;
+  }
+  .main-header {
+    background: $dark-theme !important;
+    border-bottom-color: $dark-border !important;
+    box-shadow: none;
+  }
+  .header-icon {
+    color: $dark-color;
+  }
+  .close-toggle {
+    color: $dark-color !important;
+  }
+  .layout-setting .header-icon-svgs,
+  .resp-btn .header-icon-svgs,
+  .demo-icon .header-icon-svgs {
+    fill: $dark-color;
+  }
+  .header-icon-svgs {
+    color: $dark-color;
+  }
+  @media (min-width: 992px) {
+    .main-header-left .form-control {
+      background: $dark-theme !important;
+      border-color: $dark-border;
+    }
+    .hor-header.sticky-pin {
+      &.main-header {
+        background: transparent;
+        box-shadow: none;
+        border-bottom: 0 !important;
+      }
+    }
+  }
+
+  .form-control::placeholder {
+    color: $dark-color !important;
+  }
+  @media (min-width: 992px) {
+    .main-header-left .btn {
+      color: $dark-color;
+    }
+  }
+  @media (min-width: 992px) {
+    &.horizontal .hor-header .logo-1 {
+      display: none !important;
+    }
+    &.horizontal .hor-header .dark-logo-1 {
+      display: block !important;
+    }
+    .horizontal .app-sidebar {
+      border-top-color: $dark-border;
+    }
+  }
+  .form-control {
+    color: $dark-color;
+  }
+  @media (max-width: 991px) {
+    .responsive-logo .header-logo .dark-logo-1 {
+      display: block;
+    }
+    .responsive-logo .header-logo .logo-1 {
+      display: none;
+    }
+    .responsive-navbar.navbar .navbar-collapse {
+      background: $dark-theme;
+      border-bottom-color: $dark-border;
+      border-top-color: $dark-border;
+    }
+  }
+  .navbar-toggler-icon {
+    color: $dark-color;
+  }
+  @media (min-width: 992px) {
+    .main-header-left .btn {
+      color: $white  !important;
+    }
+  }
+}
+
+.gradient-header {
+  &.transparent-theme .main-sidebar-header {
+    background: $primary;
+  }
+  .main-header.side-header.sticky.nav.nav-item.fixed-header.visible-title.sticky-pin {
+    background: $primary-gradient;
+  }
+  .main-header-center .btn:hover {
+    color: $white;
+  }
+  .main-header {
+    background: $primary-gradient !important;
+    border-bottom-color: $transparent-border !important;
+    box-shadow: none;
+  }
+  .header-icon {
+    color: $white;
+  }
+  .close-toggle {
+    color: $white !important;
+  }
+  .layout-setting .header-icon-svgs,
+  .resp-btn .header-icon-svgs,
+  .demo-icon .header-icon-svgs {
+    fill: $white;
+  }
+  .header-icon-svgs {
+    color: $white;
+  }
+  @media (min-width: 992px) {
+    .main-header-left .form-control {
+      background: $transparent-theme !important;
+      border-color: $transparent-border;
+    }
+    .hor-header.sticky-pin {
+      &.main-header {
+        background: transparent;
+        box-shadow: none;
+        border-bottom: 0 !important;
+      }
+    }
+  }
+
+  .form-control::placeholder {
+    color: $transparent-color !important;
+  }
+  @media (min-width: 992px) {
+    .main-header-left .btn {
+      color: $transparent-color;
+    }
+  }
+  @media (min-width: 992px) {
+    &.horizontal .hor-header .logo-1 {
+      display: none !important;
+    }
+    &.horizontal .hor-header .dark-logo-1 {
+      display: block !important;
+    }
+    .horizontal .app-sidebar {
+      border-top-color: $transparent-border;
+    }
+  }
+  .form-control {
+    color: $white;
+  }
+  @media (min-width: 576px) {
+    .main-header .dropdown-menu:after {
+      border-bottom-color: $white;
+    }
+  }
+  @media (max-width: 991px) {
+    .responsive-logo .header-logo .dark-logo-1 {
+      display: block;
+    }
+    .responsive-logo .header-logo .logo-1 {
+      display: none;
+    }
+    .responsive-navbar.navbar .navbar-collapse {
+      background: $primary-gradient;
+      border-bottom-color: $transparent-border;
+      border-top-color: $transparent-border;
+    }
+  }
+  .navbar-toggler-icon {
+    color: $white;
+  }
+  @media (min-width: 992px) {
+    .main-header-left .btn {
+      color: $white  !important;
+    }
+  }
+}

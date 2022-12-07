@@ -1,0 +1,4192 @@
+body.transparent-theme {
+  color: $transparent-color !important;
+  background: $transparent-body !important;
+}
+
+.transparent-theme {
+  a {
+    color: $white;
+  }
+
+  .main-header.side-header.sticky.nav.nav-item.fixed-header.visible-title.sticky-pin {
+    background: $primary;
+  }
+
+  .app-sidebar.sidebar-scroll .main-sidebar-header {
+    backdrop-filter: blur(0.25rem);
+    -webkit-backdrop-filter: blur(0.25rem);
+    border-bottom-color: $transparent-border;
+  }
+
+  .sticky.sticky-pin div.main-sidebar-header {
+    backdrop-filter: blur(0.25rem);
+    -webkit-backdrop-filter: blur(0.25rem);
+  }
+
+  &.sidebar-mini .main-sidemenu {
+    background-color: $transparent-theme !important;
+    height: 200vh !important;
+  }
+
+  &.sidenav-toggled.sidenav-toggled-open .app-sidebar {
+    background: $primary !important;
+    border-right-color: $transparent-border;
+    border-left-color: $transparent-border;
+  }
+
+  &.sidenav-toggled.sidenav-toggled-open .main-sidebar-header {
+    background: $transparent-theme;
+  }
+
+  .dropdown-menu {
+    background-color: $primary !important;
+    color: $transparent-color;
+  }
+
+  .menu-header-content {
+    background-color: $transparent-theme !important;
+  }
+
+  .br-dark {
+    border-left-color: $transparent-border !important;
+    border-right-color: $transparent-border !important;
+  }
+
+  .badge.bg-light {
+    color: $transparent-color;
+  }
+
+  .card-signin h1 {
+    color: $transparent-color !important;
+  }
+
+  .bg-white {
+    background-color: $transparent-body !important;
+  }
+
+  .card {
+    background: $transparent-theme;
+    border-color: $transparent-border;
+    box-shadow: 0 0 10px $transparent-shadow;
+  }
+
+  .main-header {
+    background: $transparent-theme;
+    border-bottom-color: $transparent-border;
+    box-shadow: 0 0 10px $transparent-shadow;
+  }
+
+  .main-header-message > a,
+  .main-header-notification > a,
+  .nav-item.full-screen > a,
+  .card-title {
+    color: $white;
+  }
+
+  .card-dashboard-audience-metrics {
+    .card-header,
+    .card-body {
+      background-color: $transparent-theme;
+    }
+  }
+
+  .card-header {
+    background-color: transparent;
+  }
+
+  .border-bottom {
+    border-bottom-color: $transparent-border !important;
+  }
+
+  .border-top {
+    border-top-color: $transparent-border !important;
+  }
+
+  .border-right {
+    border-right-color: $transparent-border !important;
+    border-left-color: $transparent-border !important;
+  }
+
+  .border-left {
+    border-left-color: $transparent-border !important;
+    border-right-color: $transparent-border !important;
+  }
+
+  .border {
+    border-color: $transparent-border !important;
+  }
+
+  .table tbody tr {
+    background-color: $transparent-theme;
+  }
+
+  .rating-table tbody tr {
+    background-color: transparent;
+  }
+
+  .table-bordered thead {
+    th,
+    td {
+      background-color: $transparent-theme;
+    }
+  }
+
+  .table {
+    color: $transparent-color;
+  }
+
+  .table-bordered {
+    border-color: $transparent-border !important;
+
+    th,
+    td {
+      border-color: $transparent-border;
+    }
+  }
+
+  .card-dashboard-audience-metrics .card-body h4 {
+    color: $transparent-color;
+  }
+
+  .progress {
+    background-color: $transparent-theme;
+  }
+
+  .card-dashboard-audience-metrics .flot-chart .flot-x-axis > div span:last-child {
+    color: $transparent-color;
+  }
+
+  .main-footer {
+    background-color: transparent;
+    border-top-color: transparent;
+    .text-primary {
+      color: $white !important;
+    }
+  }
+
+  .sidebar {
+    &.sidebar-right {
+      box-shadow: 5px 7px 26px -5px $transparent-shadow !important;
+    }
+
+    .tabs-menu ul {
+      border-bottom-color: $transparent-border;
+    }
+  }
+
+  .chat .contacts li {
+    border-bottom-color: $transparent-border;
+  }
+
+  .form-control {
+    color: $transparent-color;
+    background-color: $transparent-theme;
+    border-color: $transparent-border;
+  }
+
+  .list-group-item {
+    background-color: transparent;
+    border-color: $transparent-border;
+    color: $transparent-color !important;
+  }
+
+  .main-header-center .form-control {
+    border-color: $transparent-border !important;
+    background-color: $transparent-theme !important;
+  }
+
+  .main-header {
+    form[role="search"].active input {
+      background: $transparent-body;
+      color: $white;
+    }
+
+    .input-group-btn .btn:hover i {
+      color: $transparent-color;
+    }
+    form[role="search"] button[type="reset"] {
+      background: $transparent-theme;
+    }
+  }
+
+  .main-header-notification .dropdown-menu {
+    background-color: $transparent-theme;
+  }
+
+  .notification-label {
+    color: $transparent-color;
+  }
+
+  .main-notification-list a:hover,
+  .main-message-list a:hover {
+    background: $transparent-body;
+  }
+
+  .nav .nav-item .dropdown-menu {
+    -webkit-box-shadow: 0px 0px 15px 1px $transparent-shadow;
+    box-shadow: 0px 0px 15px 1px $transparent-shadow;
+  }
+
+  .notification-subtext {
+    color: $transparent-color;
+  }
+
+  .main-header-message .dropdown-footer,
+  .main-header-notification .dropdown-footer {
+    border-top-color: $transparent-border;
+    background: $transparent-theme;
+  }
+
+  .dropdown-menu {
+    color: $transparent-color;
+    background-color: $transparent-theme;
+    border-color: $transparent-border;
+  }
+
+  .main-message-list a {
+    .name,
+    .time,
+    .desc {
+      color: $transparent-color;
+    }
+  }
+
+  .task-line a,
+  .latest-tasks .nav-tabs .nav-link,
+  .chips p {
+    color: $transparent-color;
+  }
+
+  .chip {
+    color: $transparent-color;
+    background-color: $transparent-body;
+
+    &:hover {
+      color: $transparent-color;
+    }
+  }
+
+  .latest-tasks .check-box .ckbox span:before {
+    border-color: $transparent-border;
+  }
+
+  .table {
+    th,
+    td {
+      border-top-color: $transparent-border;
+    }
+  }
+
+  #global-loader {
+    background: $transparent-body;
+  }
+
+  .app-sidebar {
+    background: transparent;
+    box-shadow: 0 0 10px $transparent-shadow;
+    border-right-color: $transparent-border;
+    border-left-color: $transparent-border;
+  }
+
+  .main-sidebar-header {
+    background: transparent;
+  }
+
+  .side-menu__label,
+  .side-menu .side-menu__icon {
+    color: $transparent-color;
+    fill: $transparent-color;
+  }
+
+  .app-sidebar__user .user-info h4,
+  .side-menu h3 {
+    color: $white !important;
+  }
+
+  .main-sidebar-header {
+    border-bottom-color: transparent;
+    border-right-color: $transparent-border;
+    border-left-color: $transparent-border;
+  }
+
+  .main-sidebar-loggedin .media-body h6,
+  .slide.is-expanded a,
+  .side-menu__item {
+    color: $transparent-color;
+  }
+
+  .slide.is-expanded:before {
+    background: $transparent-body;
+  }
+
+  .slide-item {
+    color: $transparent-color;
+  }
+
+  .slide-menu .slide-item:before {
+    color: $transparent-color;
+  }
+
+  .open-toggle svg g,
+  .close-toggle svg g {
+    fill: $transparent-body;
+  }
+
+  .angle,
+  .sub-angle {
+    color: $transparent-color !important;
+  }
+
+  .main-header-center {
+    .btn:hover,
+    .sp-container button:hover {
+      color: $transparent-color;
+    }
+  }
+
+  .sp-container .main-header-center button:hover {
+    color: $transparent-color;
+  }
+
+  .main-header-center {
+    .btn:focus,
+    .sp-container button:focus {
+      color: $transparent-color;
+    }
+  }
+
+  .sp-container .main-header-center button:focus,
+  .main-header .input-group-btn .btn i {
+    color: $transparent-color;
+  }
+
+  .main-mail-item {
+    border-top-color: $transparent-border;
+    border-bottom-color: $transparent-border;
+
+    &.unread {
+      background-color: $transparent-theme;
+    }
+  }
+
+  .main-content-title {
+    color: $white;
+  }
+
+  .main-mail-options,
+  .main-mail-list {
+    border-color: $transparent-border;
+  }
+
+  .main-mail-item {
+    background-color: $transparent-body;
+  }
+
+  .main-mail-subject strong {
+    color: $transparent-color;
+  }
+
+  .ckbox span:before {
+    background-color: $transparent-body;
+    border-color: $transparent-border;
+  }
+
+  .main-mail-star {
+    color: $transparent-color;
+  }
+
+  .main-nav-column .nav-link {
+    color: $transparent-color;
+
+    &:hover,
+    &:focus {
+      color: $transparent-color;
+    }
+  }
+
+  .btn-light {
+    color: $transparent-color;
+    background-color: $transparent-theme;
+    border-color: $transparent-border;
+  }
+
+  .main-nav-column .nav-link {
+    &:hover i:not([class*=" tx-"]),
+    &:focus i:not([class*=" tx-"]) {
+      color: $transparent-color;
+    }
+
+    + .nav-link {
+      border-top-color: $transparent-border;
+    }
+  }
+
+  .nav-search .input-group-text {
+    color: $transparent-color;
+    background-color: $transparent-color;
+    border-color: $transparent-border;
+  }
+
+  .main-mail-header .btn-group {
+    .btn,
+    .sp-container button {
+      border-color: $transparent-border;
+      background-color: $transparent-theme;
+    }
+  }
+
+  .sp-container .main-mail-header .btn-group button {
+    border-color: $transparent-border;
+    background-color: $transparent-theme;
+  }
+
+  .main-mail-header .btn-group {
+    .btn.disabled,
+    .sp-container button.disabled {
+      background-color: $transparent-theme;
+      color: $transparent-color;
+      border-color: $transparent-border;
+    }
+  }
+
+  .sp-container .main-mail-header .btn-group button.disabled {
+    background-color: $transparent-theme;
+    color: $transparent-color;
+    border-color: $transparent-border;
+  }
+
+  .main-mail-header .btn-group {
+    .btn:hover,
+    .sp-container button:hover {
+      color: $transparent-color;
+      background-color: $transparent-color;
+    }
+  }
+
+  .sp-container .main-mail-header .btn-group button:hover {
+    color: $transparent-color;
+    background-color: $transparent-color;
+  }
+
+  .main-mail-header .btn-group {
+    .btn:focus,
+    .sp-container button:focus {
+      color: $transparent-color;
+      background-color: $transparent-color;
+    }
+  }
+
+  .sp-container .main-mail-header .btn-group button:focus {
+    color: $transparent-color;
+    background-color: $transparent-color;
+  }
+
+  .card-header,
+  .card-footer,
+  hr {
+    border-color: $transparent-border;
+  }
+
+  .main-content-label,
+  .card-table-two .card-title,
+  .card-dashboard-eight .card-title,
+  .form-label {
+    color: $white;
+  }
+
+  .select2-container--default .select2-selection--single {
+    background-color: $transparent-body;
+    border-color: $transparent-border;
+
+    .select2-selection__rendered {
+      color: $transparent-color;
+    }
+  }
+
+  .select2-dropdown {
+    background-color: $transparent-body;
+    border-color: $transparent-color;
+  }
+
+  .select2-container--default {
+    .select2-results__option[aria-selected="true"] {
+      background-color: $transparent-theme;
+    }
+
+    .select2-search--dropdown .select2-search__field {
+      border-color: $transparent-border;
+      background: $transparent-theme;
+      color: $transparent-color;
+    }
+  }
+
+  .main-nav-line-chat {
+    border-bottom-color: $transparent-border !important;
+  }
+
+  .main-nav-line .nav-link,
+  .main-chat-msg-name h6 {
+    color: $transparent-color;
+  }
+
+  .main-chat-header {
+    border-bottom-color: $transparent-border;
+    box-shadow: 2px 3px 14px $transparent-shadow;
+  }
+
+  .main-chat-list {
+    .media {
+      border-bottom-color: $transparent-border;
+
+      &.new {
+        background-color: $transparent-theme;
+
+        .media-body p,
+        .media-contact-name span:first-child {
+          color: $transparent-color;
+        }
+      }
+    }
+
+    .media-contact-name span:first-child {
+      color: $white !important;
+    }
+
+    .media.selected {
+      background-color: $transparent-body;
+    }
+  }
+
+  .main-chat-contacts-wrapper {
+    border-bottom-color: $transparent-border;
+  }
+
+  .main-chat-list .media {
+    &:hover,
+    &:focus {
+      background-color: $transparent-body;
+    }
+
+    &.selected .media-body p {
+      color: $transparent-color;
+    }
+  }
+
+  .main-msg-wrapper {
+    background-color: $transparent-body;
+    color: $transparent-color;
+  }
+
+  .main-chat-footer {
+    border-top-color: $transparent-border;
+    background-color: $transparent-body;
+  }
+
+  .irs-line-mid,
+  .irs-line-left,
+  .irs-line-right {
+    background-color: $transparent-body;
+  }
+
+  .irs-min,
+  .irs-max {
+    color: $transparent-color;
+    background: $transparent-body;
+  }
+
+  .main-calendar .fc-header-toolbar h2 {
+    color: $transparent-color;
+  }
+
+  .ui-datepicker {
+    background-color: $transparent-body;
+    box-shadow: 0 0 24px $transparent-shadow;
+    border-color: $transparent-border;
+
+    .ui-datepicker-calendar td {
+      border-color: $transparent-border;
+      background-color: $transparent-theme;
+
+      span,
+      a {
+        color: $transparent-color;
+      }
+    }
+
+    .ui-datepicker-title,
+    .ui-datepicker-calendar th {
+      color: $white;
+    }
+  }
+
+  .main-datepicker .ui-datepicker .ui-datepicker-calendar th {
+    color: $transparent-color;
+  }
+
+  .card--calendar .ui-datepicker .ui-datepicker-header {
+    border-bottom-color: $transparent-border;
+  }
+
+  .ui-datepicker .ui-datepicker-calendar td a:hover {
+    color: $transparent-color;
+  }
+
+  .main-calendar {
+    .fc-view > table {
+      background-color: $transparent-theme;
+    }
+
+    .fc-head-container .fc-day-header {
+      color: $transparent-color;
+    }
+
+    .fc-view {
+      .fc-day-number {
+        color: $transparent-color;
+      }
+
+      .fc-other-month {
+        background-color: $transparent-body;
+      }
+    }
+
+    .fc-content,
+    .main-calendar .fc-divider,
+    .fc-list-heading td,
+    .fc-list-view,
+    .fc-popover,
+    .fc-row,
+    tbody,
+    td,
+    .main-calendar th,
+    thead {
+      border-color: $transparent-border;
+    }
+
+    .fc-view {
+      .fc-day-number {
+        &:hover,
+        &:focus {
+          color: $transparent-color;
+        }
+      }
+
+      > table > {
+        thead {
+          th,
+          td {
+            border-color: $transparent-color;
+          }
+        }
+
+        tbody > tr > td {
+          border-color: $transparent-border;
+        }
+      }
+    }
+
+    .fc-header-toolbar button {
+      background-color: $transparent-body;
+      border-color: $transparent-border;
+    }
+
+    .fc-view {
+      &.fc-listMonth-view .fc-list-item,
+      &.fc-listWeek-view .fc-list-item {
+        background-color: $transparent-body;
+      }
+    }
+  }
+
+  .fc-unthemed {
+    .fc-divider,
+    .fc-list-heading td,
+    .fc-popover .fc-header {
+      background: $transparent-body;
+    }
+  }
+
+  .main-calendar .fc-view {
+    &.fc-listMonth-view .fc-list-item-title .fc-desc,
+    &.fc-listWeek-view .fc-list-item-title .fc-desc,
+    &.fc-listMonth-view .fc-list-item-title a,
+    &.fc-listWeek-view .fc-list-item-title a,
+    &.fc-listMonth-view .fc-list-heading-main span:last-child,
+    &.fc-listWeek-view .fc-list-heading-main span:last-child {
+      color: $transparent-color;
+    }
+  }
+
+  .main-contact-info-header .media-body p,
+  .tx-inverse {
+    color: $transparent-color;
+  }
+
+  .contact-icon:hover {
+    background: $transparent-body;
+    color: $transparent-color;
+  }
+
+  .main-contact-info-header {
+    border-bottom-color: $transparent-border;
+  }
+
+  .main-contact-info-body {
+    .media-body {
+      span,
+      label {
+        color: $transparent-color;
+      }
+    }
+
+    .media + .media::before {
+      border-top-color: $transparent-border;
+    }
+  }
+
+  .main-contact-body {
+    span,
+    h6 {
+      color: $transparent-color;
+    }
+  }
+
+  .main-contact-item {
+    &.selected {
+      border-top-color: $transparent-border !important;
+      border-bottom-color: $transparent-border !important;
+      background-color: $transparent-body;
+    }
+
+    + .main-contact-item {
+      border-top-color: $transparent-border;
+
+      &::before {
+        border-top-color: $transparent-border;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $transparent-body;
+      border-top-color: $transparent-border;
+      border-bottom-color: $transparent-border;
+    }
+  }
+
+  .main-contact-label::after {
+    border-bottom-color: $transparent-border;
+  }
+
+  #ui_notifIt.default {
+    background-color: $transparent-body;
+    border-color: $transparent-border;
+  }
+
+  .notifit_confirm,
+  .notifit_prompt {
+    background-color: $transparent-body;
+  }
+
+  .alert .close {
+    color: $transparent-color;
+    opacity: 1;
+  }
+
+  .tree {
+    li {
+      color: $transparent-color;
+
+      a {
+        color: $transparent-color;
+      }
+    }
+
+    ul {
+      li:last-child:before {
+        background: transparent;
+      }
+
+      &:before {
+        border-left-color: $transparent-border;
+        border-right-color: $transparent-border;
+      }
+
+      li:before {
+        border-top-color: $transparent-border;
+      }
+    }
+  }
+
+  .text-muted {
+    color: $transparent-color !important;
+  }
+
+  .main-icon-group {
+    color: $transparent-color;
+  }
+
+  .table thead th {
+    border-bottom-color: $transparent-border;
+    color: $transparent-color;
+  }
+
+  .table-hover tbody tr:hover {
+    color: $transparent-color;
+    background-color: $transparent-body !important;
+  }
+
+  table.dataTable {
+    border-color: $transparent-border;
+
+    tbody td.sorting_1 {
+      background-color: $transparent-theme;
+    }
+
+    thead {
+      th,
+      td {
+        color: $transparent-color;
+      }
+
+      .sorting_asc,
+      .sorting_desc {
+        background-color: $transparent-body;
+      }
+    }
+  }
+
+  .dataTables_wrapper {
+    .dataTables_length,
+    .dataTables_filter,
+    .dataTables_info,
+    .dataTables_processing,
+    .dataTables_paginate {
+      color: $transparent-color;
+    }
+
+    .dataTables_filter input {
+      border-color: $transparent-border;
+    }
+  }
+
+  .page-link {
+    color: $transparent-color;
+    background-color: $transparent-body;
+  }
+
+  .dataTables_wrapper .dataTables_paginate .page-item.disabled .page-link {
+    background-color: $transparent-body;
+    color: $transparent-color;
+  }
+
+  select option {
+    background: $transparent-theme;
+  }
+
+  table.dataTable tbody tr.selected {
+    background: $transparent-body;
+  }
+
+  .example {
+    border-color: $transparent-border;
+  }
+
+  #basic-alert .alert .close,
+  #dismiss-alerts .alert .close {
+    color: $white;
+  }
+
+  #icon-dismissalerts {
+    .alert .close,
+    .alert-default.alert-dismissible .close {
+      color: $transparent-color;
+    }
+  }
+
+  .main-table-reference > {
+    thead > tr > {
+      th,
+      td {
+        border-color: $transparent-border;
+      }
+    }
+
+    tbody > tr > {
+      th,
+      td {
+        border-color: $transparent-border;
+      }
+    }
+  }
+
+  pre {
+    color: $transparent-color;
+    background-color: $transparent-body;
+  }
+
+  .token {
+    &.operator,
+    &.entity,
+    &.url {
+      background: $transparent-body;
+    }
+  }
+
+  .language-css .token.string,
+  &.style .token.string {
+    background: $transparent-body;
+  }
+
+  .highlight {
+    border-color: $transparent-border !important;
+    background: $transparent-body;
+  }
+
+  .clipboard-icon {
+    background: $transparent-body;
+    border-color: $transparent-border;
+  }
+
+  .main-table-reference > thead > tr > {
+    th,
+    td {
+      background: $transparent-body !important;
+      border-color: $transparent-border !important;
+    }
+  }
+
+  .breadcrumb-style1 .breadcrumb-item a,
+  .breadcrumb-style2 .breadcrumb-item a,
+  .breadcrumb-style3 .breadcrumb-item a {
+    color: $transparent-color;
+  }
+
+  .dropdown-item {
+    color: $transparent-color;
+
+    &:hover,
+    &:focus {
+      background: $transparent-theme;
+    }
+  }
+
+  .dropdown-divider {
+    border-top-color: $transparent-border;
+  }
+
+  .img-thumbnail {
+    background-color: $transparent-body;
+    border-color: $transparent-border;
+
+    p {
+      color: $transparent-color;
+    }
+  }
+
+  .bd {
+    border-color: $transparent-border;
+  }
+
+  .bg-light {
+    background-color: $transparent-body !important;
+  }
+
+  .main-nav .nav-link {
+    &:hover,
+    &:focus {
+      color: $transparent-color;
+    }
+  }
+
+  .nav-pills .nav-link {
+    color: $transparent-color;
+
+    &:hover,
+    &:focus {
+      color: $transparent-color;
+    }
+
+    &.active {
+      color: $transparent-color !important;
+    }
+  }
+
+  .main-nav .nav-link {
+    color: $transparent-color;
+  }
+
+  #tab .bg-gray-300 {
+    background-color: $transparent-body;
+    border-bottom-color: $transparent-border;
+  }
+
+  .nav-tabs .nav-link {
+    color: $transparent-color;
+
+    &.active,
+    &:hover,
+    &:focus {
+      color: $transparent-color;
+    }
+  }
+
+  .popover-static-demo {
+    background-color: $transparent-body;
+  }
+
+  .popover {
+    background-color: $transparent-body;
+    border-color: $transparent-border;
+  }
+
+  .popover-body {
+    color: $transparent-color;
+  }
+
+  .popover-header {
+    color: $transparent-color;
+    background-color: transparent;
+    border-color: $transparent-border;
+  }
+
+  .bs-popover-top > .popover-arrow::before,
+  .bs-popover-auto[x-placement^="top"] > .popover-arrow::before,
+  .bs-popover-top > .popover-arrow::after,
+  .bs-popover-auto[x-placement^="top"] > .popover-arrow::after {
+    border-top-color: $transparent-border;
+  }
+
+  .bs-popover-bottom > .popover-arrow::after,
+  .bs-popover-auto[x-placement^="bottom"] > .popover-arrow::after,
+  .bs-popover-bottom > .popover-arrow::before,
+  .bs-popover-auto[x-placement^="bottom"] > .popover-arrow::before {
+    border-bottom-color: $transparent-border;
+  }
+
+  .bs-popover-start > .popover-arrow::after,
+  .bs-popover-auto[x-placement^="left"] > .popover-arrow::after,
+  .bs-popover-start > .popover-arrow::after,
+  .bs-popover-auto[x-placement^="left"] > .popover-arrow::after {
+    border-left-color: $transparent-border;
+    border-right-color: $transparent-border;
+  }
+
+  .bs-popover-end > .popover-arrow::after,
+  .bs-popover-auto[x-placement^="right"] > .popover-arrow::after,
+  .bs-popover-end > .popover-arrow::before,
+  .bs-popover-auto[x-placement^="right"] > .popover-arrow::before {
+    border-right-color: $transparent-border !important;
+    border-left-color: $transparent-border !important;
+  }
+
+  .bs-popover-start > .popover-arrow::before,
+  .bs-popover-auto[x-placement^="left"] > .popover-arrow::before {
+    border-left-color: $transparent-border;
+    border-right-color: $transparent-border;
+  }
+
+  .media-body {
+    color: $transparent-color;
+  }
+
+  .tooltip-static-demo {
+    background-color: $transparent-body !important;
+  }
+
+  .toast-header {
+    border-bottom-color: $transparent-border;
+  }
+
+  .toast {
+    background-color: $transparent-color;
+    border-color: $transparent-border;
+  }
+
+  .toast-header {
+    color: $transparent-color;
+    background: $transparent-body;
+  }
+
+  .bootstrap-tagsinput {
+    background-color: $transparent-body;
+  }
+
+  .tag {
+    color: $transparent-color;
+    background-color: $transparent-body;
+  }
+
+  .tag.tag-attachments {
+    background-color: transparent;
+  }
+
+  .tag.tag-attachments-lg {
+    background-color: transparent;
+  }
+
+  .tag.tag-attachments-sm {
+    background-color: transparent;
+  }
+
+  .accordion {
+    .card-header a {
+      color: $transparent-color;
+      background-color: $transparent-body;
+    }
+
+    .card-body {
+      background-color: $transparent-body;
+    }
+
+    .card-header a.collapsed {
+      &:hover,
+      &:focus {
+        color: $transparent-color;
+      }
+    }
+  }
+
+  .modal-content {
+    background-color: $transparent-body;
+    border-color: $transparent-border;
+  }
+
+  .modal-header {
+    border-bottom-color: $transparent-border;
+  }
+
+  .modal-title {
+    color: $transparent-color;
+  }
+
+  .modal-footer {
+    border-top-color: $transparent-border;
+  }
+
+  .close {
+    color: $transparent-color;
+    text-shadow: 0 1px 0 $transparent-color;
+  }
+
+  .modal-content-demo .modal-body h6 {
+    color: $transparent-color;
+  }
+
+  .vtimeline {
+    .timeline-wrapper {
+      .timeline-panel {
+        background: $transparent-body;
+        box-shadow: 0 8px 16px 0 $transparent-shadow;
+      }
+
+      &.timeline-inverted .timeline-panel:after {
+        border-right-color: $transparent-border;
+        border-left-color: $transparent-border;
+      }
+
+      .timeline-panel:after {
+        border-left-color: $transparent-border;
+        border-right-color: $transparent-border;
+      }
+    }
+
+    &:before {
+      background-color: $transparent-body;
+    }
+  }
+
+  .timeline-body {
+    color: $transparent-color;
+  }
+
+  .sweet-alert {
+    background-color: $transparent-body;
+
+    h2 {
+      color: $transparent-color;
+    }
+  }
+
+  .btn-outline-light {
+    border-color: $transparent-border;
+    color: $transparent-color;
+
+    &:hover,
+    &:focus {
+      background-color: $transparent-body !important;
+      border-color: $transparent-border !important;
+      color: $transparent-color !important;
+    }
+  }
+
+  .dropdown .fe-more-vertical {
+    color: $transparent-color;
+  }
+
+  .main-content-body-profile .nav {
+    border-bottom-color: $transparent-border;
+  }
+
+  .card-body + .card-body {
+    border-top-color: $transparent-border;
+  }
+
+  .rating-stars {
+    input {
+      color: $transparent-color;
+      background-color: $transparent-body;
+      border-color: $transparent-border;
+    }
+
+    .rating-stars-container .rating-star {
+      color: $transparent-color;
+    }
+  }
+
+  .br-theme-bars-pill .br-widget a {
+    &.br-active,
+    &.br-selected {
+      color: $transparent-color;
+    }
+  }
+
+  .br-theme-bars-1to10 .br-widget a,
+  .br-theme-bars-movie .br-widget a,
+  .br-theme-bars-horizontal .br-widget a {
+    background-color: $transparent-color;
+  }
+
+  .br-theme-bars-square .br-widget a {
+    border-color: $transparent-border;
+    background-color: $transparent-body;
+    color: $transparent-color;
+  }
+
+  .br-theme-bars-pill .br-widget a {
+    background-color: $transparent-body;
+  }
+
+  .custom-file-label {
+    color: $transparent-color;
+    background-color: $transparent-body;
+    border-color: $transparent-border;
+
+    &::after {
+      color: $transparent-color;
+    }
+  }
+
+  .input-group-text {
+    color: $transparent-color;
+    background-color: $transparent-body;
+    border-color: $transparent-border;
+  }
+
+  .sp-replacer {
+    border-color: $transparent-border;
+    background-color: $transparent-body;
+
+    &:hover,
+    &:focus {
+      border-color: $transparent-border;
+    }
+  }
+
+  .sp-container {
+    background-color: $transparent-theme;
+    border-color: $transparent-border;
+  }
+
+  .select2-container--default {
+    &.select2-container--focus .select2-selection--multiple {
+      border-color: $transparent-color;
+      background: $transparent-body;
+    }
+
+    .select2-selection--multiple {
+      background-color: $transparent-body !important;
+      color: $transparent-color;
+      border-color: $transparent-border;
+    }
+
+    &.select2-container--disabled .select2-selection--multiple {
+      background-color: $transparent-body !important;
+    }
+  }
+
+  .SumoSelect {
+    > {
+      .CaptionCont {
+        border-color: $transparent-border;
+        color: $transparent-color;
+        background-color: $transparent-body;
+      }
+
+      .optWrapper {
+        background: $transparent-body;
+        border-color: $transparent-border;
+        box-shadow: 0 2px 17px 2px $transparent-shadow;
+      }
+    }
+
+    .select-all {
+      border-bottom-color: $transparent-border;
+      background-color: $transparent-theme;
+    }
+
+    > .optWrapper > {
+      .options li.opt {
+        border-bottom-color: $transparent-border;
+      }
+
+      .MultiControls {
+        border-top-color: $transparent-border;
+        background-color: $transparent-body;
+      }
+    }
+
+    &.open > .optWrapper {
+      box-shadow: 0 2px 17px 2px $transparent-shadow;
+      border-color: $transparent-border;
+    }
+
+    &.disabled > .CaptionCont {
+      border-color: $transparent-border;
+    }
+
+    > .optWrapper {
+      > .options li.opt:hover {
+        background-color: $transparent-body;
+      }
+
+      &.multiple > .options li.opt span i {
+        border-color: $transparent-border !important;
+        background-color: $transparent-body;
+      }
+    }
+
+    .select-all > span i {
+      border-color: $transparent-border;
+      background-color: $transparent-body;
+    }
+  }
+  .SumoSelect .select-all.partial > span i {
+    background-color: $transparent-body;
+  }
+  .SumoSelect > .optWrapper.multiple > .MultiControls > p.btnOk {
+    border-right-color: $transparent-border;
+    border-left-color: $transparent-border;
+  }
+  .SumoSelect:focus > .CaptionCont {
+    border-color: $transparent-border;
+  }
+
+  .dropify-wrapper {
+    background-color: $transparent-body;
+    border-color: $transparent-border;
+    color: $transparent-color;
+
+    .dropify-preview {
+      background-color: $transparent-color;
+    }
+  }
+
+  .ff_fileupload_wrap .ff_fileupload_dropzone {
+    border-color: $transparent-border;
+    background-color: $transparent-body;
+    background-image: url(../plugins/fancyuploder/fancy_upload-dark.png);
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $transparent-theme;
+      border-color: $transparent-color;
+    }
+  }
+
+  .main-form-group {
+    border-color: $transparent-border;
+  }
+
+  .parsley-style-1 {
+    .parsley-input.parsley-error .form-control,
+    .parsley-checkbox.parsley-error,
+    .parsley-select.parsley-error .select2-container--default .select2-selection--single {
+      background-color: $transparent-body;
+    }
+  }
+
+  .wizard {
+    border-color: $transparent-border;
+    background-color: $transparent-body;
+
+    > {
+      .steps a {
+        .number,
+        &:hover .number,
+        &:active .number {
+          background-color: $transparent-theme;
+        }
+      }
+
+      .content {
+        border-top-color: $transparent-border;
+        border-bottom-color: $transparent-border;
+
+        > .title {
+          color: $transparent-color;
+        }
+      }
+    }
+  }
+
+  .ql-scrolling-demo {
+    border-color: $transparent-border;
+    background: $transparent-body;
+
+    .ql-container .ql-editor {
+      color: $transparent-color;
+    }
+  }
+
+  .ql-snow {
+    .ql-picker-label {
+      border-color: $transparent-border;
+      background-color: $transparent-body;
+    }
+
+    .ql-stroke {
+      stroke: $transparent-color;
+    }
+
+    .ql-editor,
+    &.ql-toolbar button,
+    .ql-picker {
+      color: $transparent-color;
+    }
+
+    &.ql-toolbar,
+    &.ql-container {
+      border-color: $transparent-border;
+    }
+
+    .ql-picker-options {
+      background-color: $transparent-theme;
+    }
+  }
+
+  .ql-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-options {
+    border-color: $transparent-border;
+  }
+
+  .main-profile-work-list .media-body {
+    h6,
+    p {
+      color: $transparent-color;
+    }
+  }
+
+  .main-profile-contact-list .media-body {
+    div,
+    span {
+      color: $transparent-color;
+    }
+  }
+
+  .plan-icon {
+    border-color: $transparent-border;
+    background: $transparent-body;
+  }
+
+  .main-profile-name,
+  .main-profile-body .media-body h6,
+  .main-profile-social-list .media-body a {
+    color: $transparent-color;
+  }
+
+  .profile-footer a {
+    background: $transparent-body;
+    color: $transparent-color;
+  }
+
+  .billed-from h6,
+  .invoice-title {
+    color: $transparent-color;
+  }
+
+  .main-invoice-list {
+    .media-body h6 {
+      color: $transparent-color;
+    }
+
+    .selected {
+      background-color: $transparent-body;
+      border-top-color: $transparent-border;
+      border-bottom-color: $transparent-border;
+    }
+
+    .media {
+      border-color: $transparent-border;
+
+      &:hover,
+      &:focus {
+        background-color: $transparent-body;
+      }
+    }
+
+    .media-body p {
+      color: $transparent-color;
+
+      span {
+        color: $transparent-color;
+      }
+    }
+  }
+
+  .table-invoice tbody > tr > {
+    th:first-child .invoice-notes p,
+    td:first-child .invoice-notes p,
+    th:first-child,
+    td:first-child {
+      color: $transparent-color;
+    }
+  }
+
+  .billed-from p,
+  .billed-to p,
+  .card-invoice .tx-gray-600,
+  .billed-to h6 {
+    color: $transparent-color;
+  }
+
+  .invoice-info-row {
+    + .invoice-info-row {
+      border-top-color: $transparent-border;
+    }
+
+    span:first-child {
+      color: $transparent-color;
+    }
+  }
+
+  .main-invoice-list {
+    border-top-color: $transparent-border;
+  }
+
+  .card-category {
+    background: $transparent-body;
+  }
+
+  .pricing-card .list-unstyled li {
+    border-bottom-color: $transparent-border;
+  }
+
+  .price {
+    &.panel-color > .panel-body,
+    .panel-footer {
+      background-color: $transparent-theme;
+      border-top-color: $transparent-border;
+    }
+  }
+
+  .pricing .list-unstyled li {
+    border-bottom-color: $transparent-border;
+  }
+
+  .card--events .list-group-item h6 {
+    color: $transparent-color;
+  }
+
+  .rdiobox span:before {
+    background-color: $transparent-body;
+    border-color: $transparent-border;
+  }
+
+  .colorinput-color {
+    border-color: $transparent-border;
+  }
+
+  .nice-select {
+    .list {
+      background-color: $transparent-body;
+      -webkit-box-shadow: 0px 0px 15px 1px $transparent-shadow;
+      box-shadow: 0px 0px 15px 1px $transparent-shadow;
+    }
+
+    .option {
+      &:hover,
+      &.focus,
+      &.selected.focus {
+        background-color: $transparent-theme;
+      }
+    }
+  }
+
+  .item-card {
+    .cardtitle a,
+    .cardprice span {
+      color: $transparent-color;
+    }
+  }
+
+  .bd-b {
+    border-bottom-color: $transparent-border;
+  }
+
+  .bd-r {
+    border-right-color: $transparent-border;
+    border-left-color: $transparent-border;
+  }
+
+  .bd-t {
+    border-top-color: $transparent-border;
+  }
+
+  .bd-l {
+    border-left-color: $transparent-border;
+    border-right-color: $transparent-border;
+  }
+
+  .bd-y {
+    border-top-color: $transparent-border;
+    border-bottom-color: $transparent-border;
+  }
+
+  .bd-x {
+    border-left-color: $transparent-border;
+    border-right-color: $transparent-border;
+  }
+
+  .main-card-signin {
+    border-color: $transparent-border;
+  }
+
+  .main-signin-header h4,
+  .main-signin-footer a,
+  .main-signup-footer a {
+    color: $transparent-color;
+  }
+
+  .main-error-wrapper {
+    h1,
+    h2,
+    h6 {
+      color: $white;
+    }
+  }
+
+  .construction .btn.btn-icon {
+    border-color: $transparent-border;
+  }
+
+  .mCS-minimal.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-color: $transparent-body !important;
+  }
+
+  .sidebar {
+    background: $transparent-body;
+    .card {
+      background: transparent;
+      box-shadow: none !important;
+    }
+  }
+
+  #chatmodel .modal-content {
+    background-color: $transparent-body;
+  }
+
+  .main-calendar.fc-list-empty {
+    background-color: $transparent-theme;
+    border-color: $transparent-border;
+  }
+}
+
+@media (min-width: 1245px) {
+  .transparent-theme .main-header-center .form-control {
+    border-color: $transparent-border !important;
+    background-color: $transparent-theme !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .transparent-theme .vtimeline .timeline-wrapper .timeline-panel:after {
+    border-right-color: $transparent-border !important;
+    border-left-color: $transparent-border !important;
+  }
+}
+
+@media (min-width: 576px) {
+  .transparent-theme .wizard.vertical > {
+    .content,
+    .actions {
+      border-left-color: $transparent-border;
+      border-right-color: $transparent-border;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .transparent-theme .animated-arrow span {
+    background: $transparent-body;
+
+    &:before,
+    &:after {
+      background: $transparent-body;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .transparent-theme .main-calendar .fc-header-toolbar button {
+    &.fc-month-button::before,
+    &.fc-agendaWeek-button::before,
+    &.fc-agendaDay-button::before,
+    &.fc-listWeek-button::before,
+    &.fc-listMonth-button::before {
+      color: $transparent-color;
+    }
+  }
+}
+
+.dark-them {
+  .breadcrumb {
+    background-color: $transparent-body;
+  }
+
+  table.dataTable > tbody > tr.child ul.dtr-details > li {
+    border-bottom-color: $transparent-border;
+  }
+}
+
+.transparent-theme {
+  .horizontal-main.hor-menu {
+    background: $transparent-theme;
+    border-bottom-color: $transparent-border;
+  }
+
+  .horizontalMenu > .horizontalMenu-list > li > a {
+    color: $transparent-color;
+  }
+
+  .horizontalMenucontainer .main-header {
+    border-bottom-color: $transparent-border;
+  }
+
+  .horizontalMenu > .horizontalMenu-list > li > ul.sub-menu {
+    border-color: $transparent-border;
+
+    > li > a {
+      color: $transparent-color;
+    }
+  }
+
+  .sub-menu li a:before {
+    border-color: $transparent-border;
+  }
+
+  .horizontalMenu > .horizontalMenu-list > li > ul.sub-menu {
+    .sub-menu-sub:after {
+      color: $transparent-color;
+    }
+
+    > li > ul.sub-menu {
+      background-color: $transparent-theme;
+      box-shadow: 0 8px 16px 0 $transparent-shadow;
+
+      > li > a {
+        color: $transparent-color;
+      }
+    }
+  }
+
+  .mega-menubg {
+    background: $transparent-theme;
+    box-shadow: 0 8px 16px 0 $transparent-shadow;
+    border-color: $transparent-border;
+  }
+
+  .hor-menu .horizontalMenu > .horizontalMenu-list > li > .horizontal-megamenu .link-list li a,
+  .mega-menubg.hor-mega-menu h3 {
+    color: $transparent-color;
+  }
+
+  .main-profile-menu .dropdown-item + .dropdown-item {
+    border-top-color: $transparent-border;
+  }
+
+  .main-profile-menu .dropdown-item:hover,
+  .main-profile-menu .dropdown-item:focus {
+    color: $white;
+  }
+
+  .rating-scroll h6 {
+    color: $transparent-color;
+  }
+
+  .main-calendar .fc-list-empty {
+    background-color: $transparent-theme;
+    border-color: $transparent-border;
+  }
+
+  .form-control::placeholder {
+    color: $transparent-color !important;
+  }
+
+  .header-icon,
+  .main-header-message .nav-link i,
+  .main-header-notification .nav-link i,
+  .nav-item.full-screen .nav-link i,
+  .sales-flot .flot-chart .flot-x-axis > div span:last-child,
+  .p-text .p-name {
+    color: $white;
+  }
+
+  .sidebar {
+    .tab-menu-heading {
+      background: $transparent-body;
+    }
+
+    .tabs-menu ul li {
+      a {
+        border-color: $transparent-border !important;
+        background: $transparent-theme;
+        color: $transparent-color;
+      }
+
+      .active {
+        color: $transparent-color;
+      }
+    }
+  }
+
+  .datepicker > {
+    .datepicker_inner_container > {
+      .datepicker_calendar,
+      .datepicker_timelist {
+        background-color: $transparent-theme;
+        border-color: $transparent-border;
+      }
+    }
+
+    .datepicker_header {
+      background-color: $transparent-body;
+      color: $transparent-color;
+    }
+  }
+
+  .main-datetimepicker {
+    border-color: $transparent-border;
+
+    > .datepicker_inner_container > {
+      .datepicker_calendar th {
+        color: $transparent-color;
+      }
+
+      .datepicker_timelist {
+        border-left-color: $transparent-border;
+        border-right-color: $transparent-border;
+
+        > div.timelist_item {
+          &:hover,
+          &:focus {
+            background-color: $transparent-body;
+          }
+        }
+      }
+    }
+  }
+
+  .datepicker > .datepicker_inner_container > .datepicker_timelist > div.timelist_item.hover {
+    color: $transparent-color;
+    background-color: $transparent-body;
+  }
+
+  .datetimepicker {
+    .datetimepicker-days table thead tr:last-child th {
+      color: $transparent-color;
+    }
+
+    table {
+      th.dow {
+        background: transparent;
+      }
+
+      td {
+        &.old,
+        &.new {
+          color: $transparent-color;
+        }
+
+        background: transparent;
+        color: $transparent-color;
+      }
+
+      th {
+        &.prev,
+        &.next,
+        &.switch {
+          background-color: transparent;
+          color: $transparent-color;
+        }
+
+        &.prev:hover {
+          background-color: $transparent-theme;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .transparent-theme {
+    .horizontalMenu > .horizontalMenu-list {
+      background: $transparent-theme;
+
+      > li > a {
+        border-bottom-color: $transparent-border;
+      }
+    }
+
+    .hor-menu .horizontalMenu > .horizontalMenu-list > li:hover .sub-icon {
+      background: $transparent-body;
+      border-bottom-color: $transparent-border;
+    }
+
+    .horizontalMenu > .horizontalMenu-list > li > ul.sub-menu > li > {
+      a:hover:before {
+        border-color: $transparent-border;
+      }
+
+      ul.sub-menu > li > a:hover {
+        color: $transparent-color !important;
+        background-color: $transparent-body;
+      }
+    }
+
+    .hor-menu .horizontalMenu > .horizontalMenu-list > li > .horizontal-megamenu .link-list li:hover a:before {
+      border-color: $transparent-border !important;
+      color: $transparent-color !important;
+    }
+
+    .mega-menubg {
+      li a:before {
+        border-color: $transparent-border;
+      }
+
+      background: $transparent-theme !important;
+    }
+
+    .hor-menu .horizontalMenu > .horizontalMenu-list > li > .horizontal-megamenu .link-list li a {
+      background: $transparent-theme !important;
+      color: $transparent-color !important;
+    }
+  }
+}
+
+.datetimepicker table th.prev:focus {
+  background-color: $transparent-theme;
+}
+
+.transparent-theme {
+  .datetimepicker table th {
+    &.next {
+      &:hover,
+      &:focus {
+        background-color: $transparent-theme;
+      }
+    }
+
+    &.prev span::before,
+    &.next span::before {
+      color: $transparent-color;
+    }
+
+    &.switch {
+      &:hover,
+      &:focus {
+        background-color: $transparent-theme;
+      }
+    }
+  }
+
+  .iti__selected-flag {
+    border-right-color: $transparent-border;
+    border-left-color: $transparent-border;
+  }
+
+  .iti--allow-dropdown .iti__flag-container:hover .iti__selected-flag {
+    background-color: $transparent-body;
+  }
+
+  .horizontalMenu > .horizontalMenu-list > li > ul.sub-menu {
+    background: $transparent-theme;
+  }
+
+  .dashboard-carousel .btn-icons {
+    background: $transparent-body !important;
+    color: $transparent-color;
+  }
+
+  .btn-light {
+    &:focus,
+    &.focus {
+      box-shadow: 0 0 0 0.2rem $transparent-shadow;
+    }
+
+    &:not(:disabled):not(.disabled) {
+      &:active,
+      &.active {
+        color: $transparent-color;
+        background-color: $transparent-body;
+        border-color: $transparent-border;
+      }
+    }
+  }
+
+  .show > .btn-light.dropdown-toggle {
+    color: $transparent-color;
+    background-color: $transparent-body;
+    border-color: $transparent-border;
+  }
+
+  .email-media .media-body {
+    small,
+    .media-title {
+      color: $transparent-color;
+    }
+  }
+
+  .page-item.disabled .page-link {
+    color: $transparent-color;
+    background: $transparent-body;
+  }
+
+  .chat {
+    .msg_cotainer,
+    .msg_cotainer_send {
+      background-color: $transparent-body;
+    }
+
+    .dropdown-menu li {
+      color: $transparent-color;
+
+      &:hover {
+        background: $transparent-body;
+      }
+    }
+  }
+
+  #basic .breadcrumb {
+    background-color: $transparent-body;
+  }
+
+  .latest-tasks .tasks .span,
+  .list-group-item-action,
+  .list-group-item.active,
+  .bg-info p.card-text,
+  .main-content-body.main-content-body-contacts .media-body h5 {
+    color: $transparent-color;
+  }
+
+  .table-striped tbody tr:nth-of-type(2n + 1) {
+    background-color: transparent;
+  }
+
+  .dataTables_wrapper .dataTables_filter input {
+    color: $transparent-color;
+
+    &::placeholder {
+      color: $transparent-color;
+    }
+  }
+
+  .iti__divider {
+    border-bottom-color: $transparent-border;
+  }
+
+  .iti__country.iti__highlight {
+    background-color: $transparent-theme;
+  }
+
+  .iti__country-list {
+    background-color: $transparent-theme;
+    box-shadow: 0 8px 16px 0 $transparent-shadow;
+  }
+
+  .iti--allow-dropdown .iti__flag-container:hover .iti__selected-flag {
+    background-color: $transparent-body;
+  }
+
+  .price.panel-color > .panel-body {
+    background-color: $transparent-theme;
+    border-color: $transparent-border;
+  }
+
+  table.dataTable tbody td.sorting_1 {
+    background: $transparent-body;
+  }
+
+  .dataTables_wrapper .dataTables_paginate .paginate_button.disabled {
+    color: $transparent-color;
+
+    &:hover,
+    &:focus {
+      color: $transparent-color;
+    }
+  }
+
+  .main-nav-line .nav-link.active {
+    color: $white;
+  }
+
+  .dataTables_paginate .pagination .page-link {
+    border-color: $transparent-border;
+  }
+
+  .chat {
+    abbr.timestamp,
+    .msg_time,
+    .msg_time_send {
+      color: $transparent-color;
+    }
+  }
+
+  .nav-tabs {
+    border-bottom-color: $transparent-border;
+
+    .nav-link.active {
+      border-color: $transparent-border;
+    }
+  }
+
+  .page-link {
+    border-color: $transparent-border;
+  }
+
+  .popover-head-primary .popover-header,
+  .popover-head-secondary .popover-header,
+  .popover-primary .popover-header,
+  .popover-secondary .popover-header {
+    color: $transparent-color !important;
+  }
+
+  .main-card-signin {
+    box-shadow: 0 1px 15px 1px $transparent-shadow;
+  }
+
+  .page-item.disabled .page-link {
+    border-color: $transparent-border;
+    background: $transparent-body;
+  }
+
+  .ps > .ps__rail-y {
+    background-color: $transparent-theme;
+  }
+
+  .close-toggle {
+    color: $white !important;
+  }
+
+  .slide.is-expanded {
+    .side-menu__label,
+    .side-menu__icon,
+    .angle {
+      color: $transparent-color;
+    }
+  }
+
+  .vmap-wrapper {
+    background: transparent !important;
+  }
+
+  .card-dashboard-eight .list-group-item {
+    span {
+      color: $transparent-color;
+    }
+    border-bottom-color: $transparent-border;
+    border-color: $transparent-border;
+  }
+
+  .sales-info h3,
+  .card-table h4,
+  .total-revenue h4 {
+    color: $transparent-color;
+  }
+
+  .product-timeline ul.timeline-1:before {
+    border-left-color: $transparent-border;
+    border-right-color: $transparent-border;
+  }
+
+  .main-dashboard-header-right > div h5 {
+    color: $transparent-color;
+  }
+
+  .customers {
+    .list-group-item-action {
+      &:hover,
+      &:focus {
+        background-color: $transparent-body;
+      }
+    }
+
+    h5 {
+      color: $transparent-color;
+    }
+  }
+
+  nav.prod-cat li a,
+  .product-sale .wishlist {
+    color: $transparent-color;
+  }
+
+  .shopping-cart-footer {
+    border-top-color: $transparent-border;
+  }
+
+  .select2-dropdown {
+    border-color: $transparent-border;
+  }
+
+  .sidebar-right .list a {
+    color: $transparent-color;
+  }
+
+  .card-footer {
+    background-color: $transparent-theme;
+  }
+
+  .card.card-dark {
+    border-top-color: $transparent-border !important;
+  }
+
+  .nav-tabs.html-source .nav-link.active {
+    border-color: $transparent-border;
+    background-color: $transparent-body;
+  }
+
+  .toast-body {
+    background: $transparent-body;
+  }
+
+  .tabs-style-2 .main-nav-line .nav-link {
+    background: $transparent-theme !important;
+
+    &.active {
+      background: $transparent-theme !important;
+    }
+
+    border-color: $transparent-border;
+  }
+
+  .tabs-style-3 .nav.panel-tabs li a,
+  .tabs-style-4 .nav.panel-tabs li a {
+    background: $transparent-body;
+    color: $transparent-color;
+  }
+
+  .nav-link.html-code {
+    background: $transparent-theme;
+  }
+
+  .nav-tabs .nav-link.html-code {
+    &.active,
+    &:hover,
+    &:focus {
+      background-color: $transparent-body;
+      color: $transparent-color;
+    }
+  }
+
+  .card .box {
+    box-shadow: 0 0 25px $transparent-shadow;
+  }
+
+  .userlist-table .user-link {
+    color: $transparent-color;
+  }
+
+  .main-chat-body .content-inner:before {
+    background: $transparent-body;
+  }
+
+  .left.main-msg-wrapper:before {
+    color: $transparent-color;
+  }
+
+  .icons-list-item {
+    border-color: $transparent-border;
+  }
+
+  .user-wideget-footer {
+    background-color: $transparent-theme;
+    border-top-color: $transparent-border;
+  }
+
+  .profile.navtab-custom {
+    .active a {
+      background: $transparent-body;
+      color: $transparent-color;
+    }
+
+    li a {
+      color: $transparent-color;
+      border-color: $transparent-border;
+    }
+
+    a.active {
+      background: $transparent-body;
+    }
+  }
+
+  .nav.prod-cat li a,
+  .header-icon-svgs,
+  .app-sidebar .side-item.side-item-category {
+    color: $white;
+  }
+
+  .product-pagination {
+    .page-link {
+      background-color: $transparent-theme !important;
+      border-color: $transparent-border;
+    }
+
+    .page-item.disabled .page-link {
+      border-color: $transparent-border;
+      background: $transparent-body;
+      color: $transparent-color;
+    }
+  }
+
+  .price span {
+    color: $transparent-color;
+  }
+
+  #list3 {
+    .media-body h6 {
+      color: $transparent-color;
+    }
+
+    .list-group-item {
+      border-left-color: $transparent-border;
+      border-right-color: $transparent-border;
+    }
+  }
+
+  #list8 .list-group-item,
+  #list1 .list-group-item,
+  #list8 .list-group-item {
+    border-left-color: $transparent-border;
+    border-right-color: $transparent-border;
+  }
+
+  .bg-gray-100.nav-bg .nav-tabs {
+    border-bottom-color: $transparent-border;
+
+    .nav-link {
+      background-color: $transparent-body;
+    }
+  }
+
+  .popover-static-demo .popover {
+    box-shadow: -8px 12px 18px 0 $transparent-shadow;
+    border-color: $transparent-border;
+  }
+
+  .heading-inverse {
+    background-color: $transparent-body;
+  }
+
+  .toast {
+    box-shadow: -8px 12px 18px 0 $transparent-shadow;
+  }
+
+  .tabs-style-1 {
+    .transparent-theme .border {
+      border-color: $transparent-border !important;
+    }
+
+    .main-nav-line .nav-link.active {
+      color: $transparent-color;
+      border-color: $transparent-border $transparent-border $transparent-theme;
+    }
+  }
+
+  &.app.sidenav-toggled.sidenav-toggled-open {
+    .side-menu__label,
+    .side-menu__item.active .side-menu__label {
+      color: $transparent-color;
+    }
+  }
+
+  .horizontalMenucontainer .side-menu__icon,
+  &.horizontal-light .horizontalMenucontainer .side-menu__icon {
+    color: $transparent-color;
+    fill: $transparent-color;
+  }
+
+  .main-header {
+    .dropdown-menu-left {
+      box-shadow: 0px 0px 15px 1px $transparent-shadow;
+    }
+
+    .dropdown.nav-itemd-none .dropdown-menu:after {
+      border-bottom-color: 9px solid $transparent-theme;
+    }
+  }
+
+  .file-browser .btn-default {
+    background: $transparent-body;
+    color: $transparent-color;
+    border-color: $transparent-border;
+  }
+
+  .fc-datepicker.main-datepicker.hasDatepicker {
+    border-color: $transparent-border;
+  }
+
+  .ql-snow .ql-picker {
+    &:hover .ql-picker-label,
+    &:focus .ql-picker-label,
+    &:hover .ql-picker-label,
+    &:focus .ql-picker-label {
+      color: $transparent-color;
+    }
+  }
+
+  .ql-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-label {
+    border-color: $transparent-border;
+  }
+
+  .main-mail-compose-body {
+    background-color: $transparent-body;
+
+    .form-group {
+      + .form-group {
+        border-top-color: $transparent-border;
+      }
+
+      .form-control {
+        background-color: $transparent-body !important;
+      }
+
+      .form-label,
+      .nav-link {
+        color: $transparent-color;
+      }
+    }
+  }
+
+  .horizontalMenu > .horizontalMenu-list > li > ul.sub-menu > li > ul.sub-menu > li > ul.sub-menu {
+    background-color: $transparent-theme;
+    box-shadow: 0 8px 16px 0 $transparent-shadow;
+
+    > li > a {
+      color: $transparent-color;
+    }
+  }
+
+  .fc-non-business {
+    background-color: $transparent-body;
+  }
+
+  #external-events {
+    background-color: $transparent-body;
+    border-color: $transparent-border !important;
+  }
+
+  .fc-daygrid-event {
+    background-color: $transparent-body;
+    border-color: $transparent-border;
+  }
+
+  .fc-daygrid-dot-event {
+    background-color: $transparent-body;
+    border-color: $transparent-border !important;
+
+    &:hover {
+      background-color: $transparent-body;
+    }
+  }
+
+  .fc-list-day-cushion {
+    background-color: $transparent-body;
+  }
+
+  .fc-theme-standard .fc-scrollgrid {
+    border-color: $transparent-border;
+  }
+
+  .fc .fc-daygrid-event-harness {
+    border-color: $transparent-border !important;
+  }
+
+  tr {
+    td,
+    th {
+      border-color: $transparent-border;
+    }
+  }
+
+  .fc .fc-daygrid-day-number,
+  table a {
+    color: $transparent-color;
+  }
+
+  .fc-theme-standard .fc-list {
+    border-color: $transparent-border;
+  }
+
+  .fc .fc-list-event:hover td {
+    background-color: $transparent-body !important;
+  }
+
+  #external-events p {
+    color: $transparent-color !important;
+  }
+
+  .table-striped tbody tr:nth-of-type(2n + 1) {
+    color: $transparent-color;
+  }
+
+  &.dataTables_wrapper .dataTables_length select {
+    border-color: $transparent-border;
+    color: $transparent-color;
+  }
+
+  .bs-popover-end .popover-arrow::before {
+    border-right-color: $transparent-body !important;
+    border-left-color: $transparent-body !important;
+  }
+
+  .apexcharts-radialbar-track.apexcharts-track path {
+    stroke: $transparent-body;
+  }
+
+  .sa-icon.sa-custom {
+    background-image: url("../../assets/img/brand/logo-white.png") !important;
+  }
+
+  .dropdown-menu-left {
+    box-shadow: 0px 0px 15px 1px $transparent-shadow;
+  }
+
+  .table.dataTable.no-footer {
+    border-bottom-color: $transparent-border !important;
+  }
+
+  .table-striped > tbody > tr:nth-of-type(odd) {
+    --bs-table-accent-bg: $transparent-body !important;
+  }
+
+  .dataTables_wrapper .dataTables_length select {
+    border-color: $transparent-border;
+  }
+
+  .form-select {
+    color: $white;
+  }
+
+  .apexcharts-radialbar .apexcharts-datalabel-value {
+    fill: $transparent-color !important;
+    color: $transparent-color !important;
+  }
+
+  .apexcharts-svg text {
+    color: $transparent-color !important;
+    fill: $transparent-color !important;
+  }
+
+  .layout-setting .header-icon-svgs,
+  .resp-btn .header-icon-svgs,
+  .demo-icon .header-icon-svgs {
+    fill: $white;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .transparent-theme .horizontalMenu > .horizontalMenu-list > li > ul.sub-menu {
+    background-color: $transparent-theme;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .transparent-theme .horizontalMenu > .horizontalMenu-list > li > ul.sub-menu {
+    background: $transparent-theme;
+    box-shadow: 0 8px 16px 0 $transparent-shadow;
+  }
+}
+
+@media (min-width: 576px) {
+  .transparent-theme .main-calendar .fc-header-toolbar button {
+    color: $transparent-color;
+  }
+}
+
+@media (max-width: 575px) {
+  .transparent-theme .main-calendar .fc-header-toolbar .fc-left button {
+    color: $transparent-color;
+
+    &.fc-today-button {
+      color: $transparent-color;
+    }
+  }
+}
+
+@media (max-width: 605px) {
+  .transparent-theme .fc-view,
+  .fc-view > table {
+    border-color: transparent;
+  }
+}
+
+@media (min-width: 992px) {
+  .transparent-theme {
+    &.leftbgimage1 .main-sidebar-header,
+    &.leftbgimage2 .main-sidebar-header,
+    &.leftbgimage3 .main-sidebar-header,
+    &.leftbgimage4 .main-sidebar-header,
+    &.leftbgimage5 .main-sidebar-header {
+      border-right-color: $transparent-border;
+      border-left-color: $transparent-border;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .transparent-theme.hoversubmenu.style1-leftmenu.sidenav-toggled .app-sidebar .side-menu-label1 {
+    border-bottom-color: $transparent-border;
+    color: $transparent-color !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .transparent-theme.app.sidebar-mini.sidenav-toggled-open .ps > .ps__rail-y > .ps__thumb-y {
+    background-color: $transparent-theme;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .transparent-theme .horizontalMenu > .horizontalMenu-list {
+    border-right-color: $transparent-border;
+    border-left-color: $transparent-border;
+  }
+}
+
+@media (min-width: 992px) {
+  .transparent-theme .main-nav {
+    &.main-nav-colored-bg .nav-link + .nav-link,
+    .nav-link + .nav-link {
+      border-left-color: $transparent-border;
+      border-right-color: $transparent-border;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .transparent-theme {
+    .main-signup-header,
+    .main-card-signin {
+      border-color: $transparent-border;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .horizontal.transparent-theme {
+    .horizontal-main {
+      .slide {
+        .slide-menu,
+        .sub-slide-menu {
+          background-color: $transparent-body !important;
+          border-color: $transparent-border;
+          box-shadow: 0 3px 10px $transparent-shadow !important;
+        }
+      }
+
+      .sub-slide2 .sub-slide-menu1 {
+        background-color: $transparent-body !important;
+        border-color: $transparent-border;
+        box-shadow: 0 3px 10px $transparent-shadow !important;
+      }
+    }
+
+    .logo-1 {
+      display: none !important;
+    }
+
+    .dark-logo-1 {
+      display: block !important;
+    }
+  }
+}
+.transparent-theme {
+  &.app.sidebar-mini .desktop-logo.logo-dark {
+    display: block;
+  }
+  &.app.sidebar-mini .desktop-logo.logo-light {
+    display: none;
+  }
+  .table-striped > tbody > tr:nth-of-type(odd) > * {
+    color: $transparent-color;
+  }
+  .app-sidebar__user .user-pro-body img {
+    border-color: $transparent-border;
+    box-shadow: 0px 5px 5px 0px $transparent-shadow;
+    background: $transparent-theme;
+  }
+  .dark-layout {
+    display: none;
+  }
+  .light-layout {
+    display: block;
+  }
+  .navbar-toggler-icon {
+    color: $transparent-color;
+  }
+  @media (max-width: 991px) {
+    .responsive-logo .header-logo {
+      .logo-1 {
+        display: none;
+      }
+      .dark-logo-1 {
+        display: block;
+      }
+    }
+  }
+  @media (max-width: 991px) {
+    .responsive-navbar.navbar .navbar-collapse {
+      background: $transparent-body;
+      border-bottom-color: $transparent-border;
+      border-top-color: $transparent-border;
+      box-shadow: 5px 6px 6px -3px $transparent-shadow;
+    }
+  }
+  @media (min-width: 992px) {
+    &.app.sidebar-mini.sidenav-toggled .main-sidebar-header .logo-icon.icon-dark {
+      display: block;
+    }
+    &.app.sidebar-mini.sidenav-toggled .main-sidebar-header .logo-icon.icon-light {
+      display: none;
+    }
+    &.app.sidebar-mini.sidenav-toggled.sidenav-toggled-open .desktop-logo {
+      display: none;
+    }
+    &.app.sidebar-mini.sidenav-toggled.sidenav-toggled-open .desktop-logo.logo-dark {
+      display: block;
+    }
+  }
+  @media (min-width: 992px) {
+    &.app.sidenav-toggled .side-menu__label {
+      color: $transparent-color;
+    }
+  }
+  @media (min-width: 992px) {
+    &.hover-submenu1.app.sidenav-toggled-open .side-menu__label1 {
+      border-bottom-color: $transparent-border;
+    }
+  }
+  .sub-side-menu__item {
+    color: $transparent-color;
+  }
+  .sub-slide-item2 {
+    color: $transparent-color;
+  }
+  .slide-menu a:before {
+    color: $transparent-color;
+  }
+  .apexcharts-tooltip.apexcharts-theme-light {
+    border-color: $transparent-border;
+    background: $transparent-body;
+  }
+  .main-dashboard-header-right > div label {
+    color: $transparent-color;
+  }
+  .left-content p {
+    color: $transparent-color;
+    font-weight: 400;
+  }
+  .app-sidebar__user .user-info .text-muted {
+    color: $transparent-color !important;
+    opacity: 0.8;
+  }
+  .main-footer .container-fluid {
+    color: $transparent-color;
+  }
+}
+.hover-submenu,
+.hover-submenu1 {
+  @media (min-width: 992px) {
+    &.transparent-theme {
+      &.app.sidenav-toggled-open .slide-menu {
+        background: $transparent-body;
+        border-color: $transparent-border;
+        box-shadow: 8px 8px 17px $transparent-shadow;
+      }
+
+      .side-menu__label {
+        color: $transparent-color;
+      }
+
+      .app-sidebar .slide-menu .slide-item:before {
+        color: $transparent-color;
+      }
+      &.app.sidebar-mini.sidenav-toggled-open .main-sidebar-header .logo-icon.icon-dark {
+        display: block !important;
+      }
+      &.app.sidebar-mini.sidenav-toggled-open .main-sidebar-header .logo-icon.icon-light {
+        display: none !important;
+      }
+    }
+  }
+}
+
+.transparent-theme {
+  .app-sidebar .slide .side-menu__item.active::before {
+    background: $white;
+  }
+  .side-menu__item.active,
+  .side-menu__item:hover,
+  .side-menu__item:focus {
+    color: $white;
+  }
+  .side-menu__item.active .side-menu__icon,
+  .side-menu__item:hover .side-menu__icon,
+  .side-menu__item:focus .side-menu__icon {
+    fill: $white !important;
+    color: $white !important;
+  }
+  .slide.is-expanded .side-menu__label,
+  .slide.is-expanded .side-menu__icon,
+  .slide.is-expanded .angle {
+    color: $white !important;
+  }
+  .slide:hover .side-menu__label,
+  .slide:hover .angle,
+  .slide:hover .side-menu__icon {
+    fill: $white !important;
+    color: $white !important;
+  }
+  .slide-item.active,
+  .slide-item:hover,
+  .slide-item:focus {
+    color: $white !important;
+    &::before {
+      color: $white !important;
+    }
+    .sub-angle {
+      color: $white !important;
+      opacity: 1;
+    }
+  }
+  .sub-side-menu__item.active,
+  .sub-side-menu__item:hover,
+  .sub-side-menu__item:focus {
+    color: $white !important;
+    &::before {
+      color: $white !important;
+    }
+    .sub-angle {
+      color: $white !important;
+      opacity: 1;
+    }
+  }
+  .side-menu__item.active .side-menu__label {
+    color: $white !important;
+  }
+  .app-sidebar .slide.active .side-menu__icon,
+  .app-sidebar .slide.is-expanded .side-menu__icon {
+    fill: $white !important;
+  }
+  .sub-slide.is-expanded .sub-side-menu__item:hover {
+    color: $white;
+  }
+  .sub-slide-menu1 .sub-slide-item2:hover {
+    color: $white !important;
+  }
+  @media (min-width: 992px) {
+    &.sidenav-toggled.sidenav-toggled-open .app-sidebar .slide .side-menu__item.active::before {
+      background: $white;
+    }
+  }
+  @media (min-width: 992px) {
+    &.horizontal .app-sidebar {
+      border-top-color: $transparent-border;
+    }
+    .horizontal-main {
+      background: $transparent-theme;
+    }
+    .sticky-pin {
+      .horizontal-main {
+        background: $primary !important;
+      }
+    }
+  }
+  @media (max-width: 991px) {
+    &.app.sidenav-toggled {
+      .app-sidebar {
+        background: $primary;
+        .main-sidemenu {
+          background-color: transparent !important;
+        }
+      }
+    }
+    .hor-header {
+      &.fixed-header {
+        background: $primary;
+      }
+    }
+  }
+  .apexcharts-tooltip.apexcharts-theme-light .apexcharts-tooltip-title {
+    background: $transparent-body;
+    border-bottom-color: $transparent-border;
+  }
+  #slide-right,
+  #slide-left {
+    svg {
+      fill: $white;
+    }
+  }
+  .demo_changer {
+    background-color: $transparent-body;
+  }
+
+  .demo_changer .form_holder {
+    background-color: transparent;
+    border-left-color: $transparent-border;
+    border-right-color: $transparent-border;
+  }
+
+  .demo_changer h4 {
+    border-bottom-color: $transparent-border;
+    background: $transparent-theme;
+    border-top-color: $transparent-border;
+    color: $white !important;
+  }
+  .demo_changer,
+  .demo_changer p {
+    color: $transparent-color !important;
+  }
+  .input-color-picker {
+    border-color: $transparent-border;
+    background-color: transparent;
+  }
+  .input-dark-color-picker {
+    border-color: $transparent-border;
+    background-color: transparent;
+  }
+  .input-transparent-color-picker {
+    border-color: $transparent-border;
+    background-color: transparent;
+  }
+  .form_holder img {
+    border-color: $transparent-border;
+    background: transparent;
+  }
+  .sidebar-right1 {
+    h4 {
+      color: $white;
+    }
+  }
+  .switch_section span {
+    color: $transparent-color !important;
+  }
+  @media (min-width: 992px) {
+    &.app.sidenav-toggled .side-menu__item {
+      border-right-color: transparent;
+      border-left-color: transparent;
+    }
+  }
+  .text-dark {
+    color: $white !important;
+  }
+  p {
+    color: $transparent-color;
+  }
+  .icons-list-item svg {
+    fill: $transparent-color;
+  }
+  .main-table-reference {
+    background-color: $transparent-theme;
+  }
+  .main-contact-star:hover,
+  .main-contact-star:focus {
+    color: $transparent-color;
+  }
+  .minus {
+    background: url(../plugins/dtree/images/misc.png) -18px -59px no-repeat transparent;
+  }
+  .dTree a {
+    color: $transparent-color;
+  }
+  .main-nav-column .nav-link i:not([class*=" tx-"]) {
+    color: $transparent-color;
+  }
+  .file-image-1 {
+    border-color: $transparent-border;
+  }
+  .pro-img-box img {
+    border-color: $transparent-border !important;
+  }
+  .tag.tag-attachments-lg {
+    border-color: $transparent-border;
+  }
+  .tag.tag-attachments-sm {
+    border-color: $transparent-border;
+  }
+  .tag.tag-attachments {
+    border-color: $transparent-border;
+  }
+  .main-img-user1 {
+    &.avatar-lg,
+    &.avatar-md,
+    &.avatar-sm {
+      .number-badge {
+        border-color: $transparent-border;
+      }
+    }
+  }
+  .main-img-user3 {
+    &.avatar-lg,
+    &.avatar-md,
+    &.avatar-sm {
+      .icon-badgeavatar {
+        border-color: $transparent-border;
+      }
+    }
+  }
+  .badge.bg-white {
+    color: $white !important;
+  }
+  #tab,
+  #typography {
+    .bg-gray-100 {
+      background-color: $transparent-theme !important;
+    }
+  }
+  #popover,
+  #popover2,
+  #popover3 {
+    .bg-gray-200 {
+      background-color: $dark-theme !important;
+    }
+  }
+  .nav-tabs .nav-link:hover,
+  .nav-tabs .nav-link:focus {
+    border-color: $transparent-border;
+  }
+  .main-nav-line .nav-link.active::before {
+    background-color: $white;
+  }
+  .nav-tabs .nav-link.active {
+    color: $white;
+    background-color: $transparent-theme !important;
+    border-color: $transparent-border;
+  }
+  .bootstrap-tagsinput input {
+    color: $transparent-color;
+  }
+  .tabs-style-1 .panel-tabs {
+    border-bottom-color: $transparent-border;
+  }
+  .scrollspy-example {
+    border-right-color: $transparent-border;
+    border-left-color: $transparent-border;
+    border-bottom-color: $transparent-border;
+  }
+  .navbar-light .navbar-brand {
+    color: $white;
+  }
+  #navbar-example3 .nav-link {
+    color: $transparent-color;
+  }
+  .scrollspy-example-2 {
+    border-color: $transparent-border;
+  }
+  .select2-container--default .select2-selection--single .select2-selection__placeholder {
+    color: $white;
+  }
+  .form-control::-webkit-file-upload-button {
+    color: $transparent-color;
+    background-color: $transparent-body;
+  }
+  .form-control:hover:not(:disabled):not([readonly])::-webkit-file-upload-button {
+    background-color: $transparent-theme;
+  }
+  .theme-container,
+  .theme-container2,
+  .theme-container1 {
+    button {
+      color: $transparent-color;
+      background-color: $transparent-theme;
+      border-color: $transparent-border;
+    }
+  }
+  .pcr-app {
+    background: $transparent-body;
+  }
+  .datepicker {
+    box-shadow: 0.5px 0.5px 0px $transparent-shadow;
+    border-color: $transparent-border;
+    background-color: $transparent-theme;
+  }
+  .datepicker table tr td span {
+    background: $transparent-theme;
+  }
+  .datepicker td {
+    color: $transparent-color;
+  }
+  .datepicker .datepicker-switch:hover,
+  .datepicker .prev:hover,
+  .datepicker .next:hover,
+  .datepicker tfoot tr th:hover {
+    color: $white;
+  }
+  .datepicker th {
+    color: $white;
+  }
+  .datepicker-days tbody {
+    background: $transparent-theme;
+  }
+  .ui-state-default,
+  .ui-widget-content .ui-state-default,
+  .ui-widget-header .ui-state-default,
+  .ui-button {
+    border-color: $transparent-border;
+    background: $transparent-theme;
+    color: $transparent-color;
+  }
+  .ui-widget.ui-widget-content {
+    border-color: $transparent-border;
+  }
+  .ui-datepicker .ui-datepicker-header .ui-datepicker-next,
+  .ui-datepicker .ui-datepicker-header .ui-datepicker-prev {
+    color: $transparent-color;
+  }
+  .ui-datepicker .ui-datepicker-calendar td a:hover {
+    background-color: $transparent-body;
+    color: $white;
+  }
+  .datetimepicker {
+    box-shadow: 0 0 6px $transparent-shadow;
+  }
+  .datetimepicker-hours span.hour:hover,
+  .datetimepicker-hours span.minute:hover,
+  .datetimepicker-hours span.month:hover,
+  .datetimepicker-hours span.year:hover {
+    background: $transparent-theme;
+  }
+  .datetimepicker-minutes span.hour:hover,
+  .datetimepicker-minutes span.minute:hover,
+  .datetimepicker-minutes span.month:hover,
+  .datetimepicker-minutes span.year:hover {
+    background: $transparent-theme;
+  }
+  .select2-container--default.select2-container--disabled .select2-selection--single {
+    background-color: $transparent-theme;
+  }
+  .select2-container--default {
+    .select2-selection--single {
+      .select2-selection__placeholder {
+        color: $transparent-color;
+      }
+    }
+  }
+  .intl-tel-input {
+    border-color: $transparent-border;
+
+    .flag-dropdown {
+      .selected-flag {
+        background: $transparent-body;
+
+        &:hover {
+          background-color: $transparent-theme;
+        }
+      }
+    }
+  }
+
+  .intl-tel-input {
+    .flag-dropdown {
+      .selected-flag .down-arrow {
+        border-top-color: $transparent-border;
+      }
+
+      .country-list {
+        box-shadow: 1px 1px 4px $transparent-shadow;
+        background-color: $transparent-body;
+
+        .divider {
+          border-bottom-color: $transparent-border;
+        }
+
+        .country {
+          .dial-code {
+            color: $transparent-color;
+          }
+
+          &.highlight {
+            background-color: $transparent-theme;
+          }
+        }
+      }
+    }
+
+    input {
+      border-color: $transparent-border;
+    }
+  }
+  #mobile-number {
+    background-color: $transparent-theme;
+    color: $white;
+  }
+  .datepicker > .datepicker_inner_container {
+    background-color: $transparent-body;
+    border-color: $transparent-border;
+    box-shadow: 0.5px 0px 3px $transparent-shadow;
+  }
+  .main-datetimepicker > .datepicker_inner_container > .datepicker_calendar td.hover {
+    background-color: $transparent-theme;
+  }
+  .dropify-wrapper p:first-child {
+    color: $transparent-color !important;
+  }
+  .dropify-wrapper .dropify-message span.file-icon {
+    color: $white;
+  }
+  .ff_fileupload_wrap table.ff_fileupload_uploads td.ff_fileupload_summary {
+    color: $transparent-color;
+  }
+  .ff_fileupload_wrap table.ff_fileupload_uploads td.ff_fileupload_summary .ff_fileupload_filename input {
+    border-color: $transparent-border;
+    color: $transparent-color;
+    background: transparent;
+  }
+  .background {
+    background-color: $transparent-body !important;
+  }
+  .main-dropdown-form-demo .dropdown-title {
+    color: $white;
+  }
+  .form-select {
+    border-color: $transparent-border;
+  }
+
+  .was-validated .form-select:invalid,
+  .form-select.is-invalid,
+  input.form-select.parsley-error,
+  textarea.form-select.parsley-error {
+    background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%233b4863' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e")
+        no-repeat right 0.75rem center/8px 10px,
+      url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fa5c7c' viewBox='-2 -2 7 7'%3e%3cpath stroke='%23fa5c7c' d='M0 0l3 3m0-3L0 3'/%3e%3ccircle r='.5'/%3e%3ccircle cx='3' r='.5'/%3e%3ccircle cy='3' r='.5'/%3e%3ccircle cx='3' cy='3' r='.5'/%3e%3c/svg%3E")
+        $transparent-theme no-repeat center right 1.75rem / calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+  }
+  .wizard > .steps .current a {
+    color: $white;
+  }
+  .wizard > .steps .disabled a {
+    color: $transparent-color;
+  }
+  .note-icon-border {
+    border-color: $transparent-border;
+  }
+  .note-editor {
+    &.note-frame,
+    &.note-airframe {
+      border-color: $transparent-border;
+    }
+
+    &.note-frame .note-editing-area .note-editable[contenteditable="false"],
+    &.note-airframe .note-editing-area .note-editable[contenteditable="false"] {
+      background-color: $transparent-body;
+    }
+
+    &.note-frame .note-editing-area .note-codable,
+    &.note-airframe .note-editing-area .note-codable {
+      color: $transparent-color;
+      background-color: $transparent-body;
+    }
+    &.note-frame .note-status-output,
+    &.note-airframe .note-status-output {
+      color: $transparent-color;
+      border-top-color: $transparent-border;
+    }
+
+    &.note-frame .note-status-output .text-muted,
+    &.note-airframe .note-status-output .text-muted {
+      color: $transparent-color;
+    }
+
+    &.note-frame .note-status-output .alert,
+    &.note-airframe .note-status-output .alert {
+      color: $transparent-color;
+      background-color: $transparent-body;
+    }
+
+    &.note-frame .note-statusbar,
+    &.note-airframe .note-statusbar {
+      background-color: $transparent-body;
+      border-top-color: $transparent-border;
+    }
+
+    &.note-frame .note-statusbar .note-resizebar .note-icon-bar,
+    &.note-airframe .note-statusbar .note-resizebar .note-icon-bar {
+      border-top-color: $transparent-border;
+    }
+  }
+
+  .note-popover .popover-content,
+  .note-editor .note-toolbar {
+    background: $transparent-body;
+  }
+
+  .note-popover .popover-content .note-color .note-dropdown-menu .note-palette .note-palette-title,
+  .note-editor .note-toolbar .note-color .note-dropdown-menu .note-palette .note-palette-title {
+    border-bottom-color: $transparent-border;
+  }
+
+  .note-popover .popover-content .note-color .note-dropdown-menu .note-palette {
+    .note-color-reset:hover,
+    .note-color-select:hover {
+      background: $transparent-border;
+    }
+  }
+
+  .note-editor .note-toolbar .note-color .note-dropdown-menu .note-palette {
+    .note-color-reset:hover,
+    .note-color-select:hover {
+      background: $transparent-border;
+    }
+  }
+
+  .note-popover .popover-content .note-color .note-dropdown-menu .note-palette .note-holder-custom .note-color-btn,
+  .note-editor .note-toolbar .note-color .note-dropdown-menu .note-palette .note-holder-custom .note-color-btn {
+    border-color: $transparent-border;
+  }
+
+  .note-modal {
+    .note-image-dialog .note-dropzone {
+      color: $transparent-color;
+      border-color: $transparent-border;
+    }
+  }
+
+  .note-placeholder {
+    color: $transparent-color;
+  }
+
+  .note-handle .note-control-selection {
+    border-color: $transparent-border;
+
+    .note-control-selection-bg {
+      background-color: $transparent-body;
+    }
+
+    .note-control-handle,
+    .note-control-sizing,
+    .note-control-holder {
+      border-color: $transparent-border;
+    }
+
+    .note-control-sizing {
+      background-color: $transparent-body;
+    }
+
+    .note-control-selection-info {
+      background-color: $transparent-body;
+    }
+  }
+
+  .note-toolbar {
+    background: $transparent-body;
+  }
+
+  .note-btn-group .note-btn {
+    border-color: $transparent-border;
+  }
+  .note-editor.note-frame.panel.panel-default .panel-heading {
+    background-color: $transparent-body;
+    border-bottom-color: $transparent-border;
+  }
+  .note-btn.btn-default {
+    background-color: $transparent-theme;
+    border-color: $transparent-border;
+  }
+  .btn,
+  .sp-container button {
+    color: $transparent-color;
+  }
+  .note-editor .btn-default:not(:disabled):not(.disabled):active {
+    background-color: $transparent-body;
+  }
+  .note-btn.btn-default:not(:disabled):not(.disabled).active {
+    color: $white;
+    background-color: $transparent-body;
+    border-color: $transparent-border;
+  }
+  .richText {
+    .richText-form {
+      input {
+        &[type="text"],
+        &[type="file"],
+        &[type="number"] {
+          border-color: $transparent-border;
+        }
+      }
+
+      select {
+        border-color: $transparent-border;
+      }
+
+      button {
+        color: $transparent-color;
+      }
+    }
+
+    .richText-toolbar {
+      ul {
+        border-bottom-color: $transparent-border;
+
+        li {
+          a {
+            color: $transparent-color;
+
+            .richText-dropdown-outer {
+              .richText-dropdown {
+                background-color: $transparent-body;
+                border-color: $transparent-border;
+                box-shadow: 0px 16px 18px rgba(6, 10, 48, 0.1);
+
+                .richText-dropdown-close {
+                  background: $transparent-body;
+                  color: $transparent-color;
+                }
+              }
+
+              ul.richText-dropdown {
+                li {
+                  a {
+                    border-bottom-color: $transparent-border;
+
+                    &:hover {
+                      background-color: $transparent-body;
+                    }
+                  }
+
+                  &.inline {
+                    a {
+                      box-shadow: 0 0 10px 0 $transparent-shadow;
+                    }
+                  }
+                }
+              }
+            }
+
+            &:hover {
+              background-color: $transparent-theme;
+            }
+          }
+        }
+      }
+    }
+
+    .richText-editor {
+      background-color: $transparent-theme;
+      border-right-color: $transparent-border;
+      border-left-color: $transparent-border;
+
+      table {
+        td,
+        th {
+          border-color: $transparent-border;
+        }
+      }
+
+      &:focus {
+        border-right-color: $transparent-border;
+        border-left-color: $transparent-border;
+      }
+    }
+
+    .richText-initial {
+      background-color: $transparent-body;
+    }
+
+    .richText-undo,
+    .richText-redo {
+      border-right-color: $transparent-border;
+      border-left-color: $transparent-border;
+    }
+
+    .richText-help-popup {
+      hr {
+        border-top-color: $transparent-border;
+      }
+    }
+
+    .richText-list.list-rightclick {
+      background-color: $transparent-body;
+      border-right-color: $transparent-border;
+      border-left-color: $transparent-border;
+      border-bottom-color: $transparent-border;
+    }
+
+    border-color: $transparent-border;
+    background-color: $transparent-body !important;
+
+    .richText-toolbar ul li a {
+      border-right-color: $transparent-border;
+      border-left-color: $transparent-border;
+    }
+  }
+  .ql-wrapper-demo {
+    background-color: $transparent-body;
+  }
+  .ql-snow.ql-toolbar button:hover,
+  .ql-snow .ql-toolbar button:hover,
+  .ql-snow.ql-toolbar button:focus,
+  .ql-snow .ql-toolbar button:focus,
+  .ql-snow.ql-toolbar button.ql-active,
+  .ql-snow .ql-toolbar button.ql-active,
+  .ql-snow.ql-toolbar .ql-picker-label:hover,
+  .ql-snow .ql-toolbar .ql-picker-label:hover,
+  .ql-snow.ql-toolbar .ql-picker-label.ql-active,
+  .ql-snow .ql-toolbar .ql-picker-label.ql-active,
+  .ql-snow.ql-toolbar .ql-picker-item:hover,
+  .ql-snow .ql-toolbar .ql-picker-item:hover,
+  .ql-snow.ql-toolbar .ql-picker-item.ql-selected,
+  .ql-snow .ql-toolbar .ql-picker-item.ql-selected {
+    color: $white;
+  }
+  .ql-snow.ql-toolbar button.ql-active {
+    background-color: $transparent-theme;
+  }
+  .ql-snow a {
+    color: $white;
+  }
+  .ql-snow .ql-tooltip {
+    background-color: $transparent-body;
+    border-color: $transparent-border;
+    box-shadow: 0px 0px 5px $transparent-shadow;
+    color: $transparent-color;
+  }
+  .ql-snow .ql-tooltip::before {
+    color: $transparent-color;
+  }
+  .ql-snow .ql-tooltip a {
+    color: $transparent-color;
+  }
+  .dataTables_wrapper .dataTables_length .select2-container--default .select2-selection--single {
+    border-color: $transparent-border;
+  }
+  .dataTables_paginate .pagination .page-link {
+    background-color: $transparent-theme;
+    border-color: $transparent-border;
+  }
+  .card-img-holder {
+    .card-footer {
+      background-color: transparent;
+    }
+  }
+  .widget-user .widget-user-image > img {
+    border-color: $transparent-border;
+  }
+  .user-wideget .border-end {
+    border-right-color: $transparent-border !important;
+    border-left-color: $transparent-border !important;
+  }
+  .border-start {
+    border-right-color: $transparent-border !important;
+    border-left-color: $transparent-border !important;
+  }
+  .border-end {
+    border-right-color: $transparent-border !important;
+    border-left-color: $transparent-border !important;
+  }
+  .latest-tasks .time {
+    color: $transparent-color;
+  }
+  .browser-stats .sub-text {
+    color: $transparent-color;
+  }
+  .bxl-instagram.tx-prime,
+  .bxl-linkedin.tx-prime,
+  .bxl-twitter.tx-prime,
+  .bxl-facebook.tx-prime {
+    background: $transparent-body;
+    border-color: $transparent-border;
+    color: $white;
+  }
+  .profile-user .profile-edit {
+    background: $transparent-body;
+  }
+  hr {
+    background: $transparent-border;
+    opacity: 1;
+  }
+  .panel-color {
+    .list-group-item {
+      background-color: $transparent-theme;
+    }
+  }
+  .content-title {
+    color: $white;
+  }
+  .main-mail-subject span {
+    color: $transparent-color;
+  }
+  .main-mail-item:hover,
+  .main-mail-item:focus {
+    background-color: $transparent-body;
+  }
+  .main-mail-item.selected {
+    background-color: $transparent-body;
+  }
+  .main-mail-options .btn:hover,
+  .main-mail-options .sp-container button:hover {
+    background-color: $transparent-body;
+  }
+  .main-mail-date {
+    color: $transparent-color;
+  }
+  .main-mail-options .btn.disabled,
+  .main-mail-options .sp-container button.disabled {
+    color: $transparent-color;
+  }
+  .main-chat-list .media.selected {
+    border-top-color: $transparent-border;
+    border-bottom-color: $transparent-border;
+  }
+  .main-chat-list .media {
+    border-bottom-color: $transparent-border;
+  }
+  .main-chat-list .media:hover,
+  .main-chat-list .media:focus {
+    border-top-color: $transparent-border;
+    border-bottom-color: $transparent-border;
+  }
+  .main-chat-footer {
+    .form-control {
+      background-color: transparent;
+    }
+  }
+  .main-chat-list .media-body p {
+    color: $transparent-color;
+  }
+  .main-chat-list .media-contact-name span:last-child {
+    color: $transparent-color;
+  }
+  .main-chat-body .media-body > div:last-child {
+    color: $transparent-color;
+  }
+  .main-chat-msg-name small {
+    color: $transparent-color;
+  }
+  .shared-files {
+    border-color: $transparent-border;
+  }
+  .nice-select {
+    color: $transparent-color;
+    background-color: $transparent-body;
+    border-color: $transparent-border;
+
+    &:after {
+      border-bottom-color: $transparent-border;
+      border-right-color: $transparent-border;
+    }
+
+    &.disabled {
+      border-color: $transparent-border;
+      color: $transparent-color;
+
+      &:after {
+        border-color: $transparent-border;
+      }
+    }
+    .list {
+      background-color: $transparent-body;
+      box-shadow: 0 0 0 1px $transparent-shadow;
+    }
+
+    .option {
+      &:hover,
+      &.focus {
+        background-color: $transparent-theme;
+      }
+
+      &.selected {
+        &.focus {
+          background-color: $transparent-theme;
+        }
+      }
+
+      &.disabled {
+        color: $transparent-color;
+      }
+    }
+  }
+  .card-item-desc .card-item-desc-1 dd {
+    color: $transparent-color;
+  }
+  .table {
+    --bs-table-hover-color: $transparent-color;
+  }
+  .product-details .table-bordered > :not(caption) > * {
+    border-bottom-color: $transparent-border;
+  }
+  @media (min-width: 768px) {
+    #checkoutsteps > .steps .number {
+      background-color: $transparent-body;
+      color: $transparent-color;
+      border-color: $transparent-border;
+    }
+    #checkoutsteps .checkoutline {
+      background-color: $transparent-theme;
+    }
+  }
+  #checkoutsteps > .steps a {
+    color: $white;
+  }
+  #checkoutsteps .item {
+    border-bottom-color: $transparent-border;
+  }
+  #checkoutsteps .total {
+    color: $white;
+  }
+  .handle-counter input {
+    border-color: $transparent-border;
+    background-color: $transparent-theme;
+    color: $white;
+  }
+  .card-pay .tabs-menu.nav {
+    background: $transparent-theme;
+  }
+  .card-pay .tabs-menu.nav li {
+    border-left-color: $transparent-border;
+    border-right-color: $transparent-border;
+  }
+  .alert {
+    .item-card {
+      svg {
+        fill: $transparent-color;
+      }
+    }
+  }
+  .main-logo1 {
+    color: $white;
+  }
+  .main-signup-header .form-control {
+    color: $transparent-color;
+    border-color: $transparent-border;
+  }
+  .main-signup-header label {
+    color: $white;
+  }
+  .main-signup-header h2 {
+    color: $white !important;
+  }
+  .main-signin-header h2 {
+    color: $white;
+  }
+  .construction {
+    h2 {
+      color: $white;
+    }
+  }
+  .main-signin-header label {
+    color: $transparent-color;
+  }
+  .main-signup-footer p {
+    color: $transparent-color;
+  }
+  .main-card-signin {
+    background-color: transparent;
+  }
+  &.error-3 {
+    .bg-white {
+      background-color: $transparent-theme !important;
+    }
+  }
+  .main-signin-header .form-control {
+    color: $transparent-color;
+    border-color: $transparent-border;
+  }
+  .main-table-reference {
+    .bg-gray-100 {
+      background-color: $transparent-body !important;
+    }
+  }
+  .border-card {
+    .bg-gray-100 {
+      background-color: $transparent-theme !important;
+    }
+  }
+  .flex-card {
+    .bg-gray-200,
+    .bg-gray-300 {
+      background-color: $transparent-theme !important;
+    }
+  }
+  .card-body .switch_section span {
+    color: $transparent-color !important;
+  }
+  .fixed-header {
+    @media (min-width: 576px) {
+      &.main-header .dropdown-menu:after {
+        border-bottom-color: $white;
+      }
+    }
+  }
+  @media (min-width: 992px) {
+    &.app.sidenav-toggled .side-menu__item {
+      border-right-color: transparent;
+      border-left-color: transparent;
+    }
+  }
+  .fc .fc-daygrid-day.fc-day-today {
+    background-color: $transparent-body;
+  }
+  .fc-timegrid-event-harness-inset .fc-timegrid-event {
+    box-shadow: 0px 0px 0px 1px $transparent-shadow;
+  }
+  .fc-theme-standard .fc-list-day-cushion {
+    background-color: $transparent-body;
+  }
+  .fc-theme-standard .fc-list-day-cushion .fc-list-day-text,
+  .fc-theme-standard .fc-list-day-cushion .fc-list-day-side-text {
+    color: $white !important;
+  }
+  .fc-list-event.fc-event {
+    color: $transparent-color;
+  }
+  .fc .fc-list-empty {
+    background-color: $transparent-body;
+  }
+  .side-menu__item.active .angle {
+    color: $white !important;
+  }
+  .owl-nav button {
+    background: $transparent-body !important;
+    opacity: 1 !important;
+    border-color: $transparent-border !important;
+    box-shadow: 0 4px 15px $transparent-shadow;
+  }
+  .owl-carousel .owl-nav button.owl-prev,
+  .owl-carousel .owl-nav button.owl-next,
+  .owl-carousel button.owl-dot {
+    color: $white;
+  }
+  .alert {
+    border-color: $transparent-border;
+  }
+  #basic,
+  #custom,
+  #divider,
+  #center,
+  #right {
+    @media (max-width: 568px) {
+      .example {
+        border-color: $transparent-border;
+      }
+    }
+  }
+  .breadcrumb-item a {
+    color: $transparent-color;
+  }
+  .breadcrumb-item + .breadcrumb-item::before {
+    color: $transparent-border;
+  }
+  .breadcrumb-item.active {
+    color: $white;
+  }
+  .btn:focus-visible {
+    outline: 0 !important;
+  }
+  .btn-light:not(:disabled):not(.disabled):active:focus,
+  .btn-light:not(:disabled):not(.disabled).active:focus {
+    box-shadow: 0 0 0 0.2rem $transparent-shadow;
+  }
+  #basic,
+  #hori {
+    .main-nav .nav-link.active {
+      color: $white !important;
+    }
+  }
+  #vertical {
+    .main-nav-column .nav-link.active {
+      color: $white !important;
+    }
+  }
+  .toast-body {
+    color: $transparent-color;
+  }
+  .tabs-style-3 {
+    .tabs-menu-body {
+      border-color: $transparent-border;
+    }
+  }
+  .tabs-style-4 .tabs-menu-body {
+    border-color: $transparent-border;
+  }
+  .tab_wrapper.right_side .content_wrapper {
+    border-color: $transparent-border;
+  }
+  .tab_wrapper.right_side > ul li.active {
+    border-color: $transparent-border;
+  }
+  .tab_wrapper > ul li {
+    border-color: $transparent-border;
+    border-top-color: $transparent-border;
+  }
+  .tab_wrapper.right_side > ul {
+    border-bottom-color: $transparent-border;
+  }
+  .tab_wrapper.right_side > ul li:after {
+    background: $transparent-body;
+  }
+  .ql-snow .ql-tooltip input[type="text"] {
+    border-color: $transparent-border;
+    background: $transparent-body;
+  }
+  .ql-snow .ql-tooltip.ql-editing a.ql-action::after {
+    color: $transparent-color;
+  }
+  .datetimepicker table span.active,
+  .datetimepicker table td.active {
+    background: $transparent-theme;
+  }
+  .dropify-wrapper:hover {
+    background-image: linear-gradient(
+      -45deg,
+      $transparent-theme 25%,
+      transparent 25%,
+      transparent 50%,
+      $transparent-theme 50%,
+      $transparent-theme 75%,
+      transparent 75%,
+      transparent
+    );
+  }
+  .border-end-0 {
+    border-right-color: $transparent-border !important;
+    border-left-color: $transparent-border !important;
+  }
+  .border-start-0 {
+    border-right-color: $transparent-border !important;
+    border-left-color: $transparent-border !important;
+  }
+  .was-validated .form-select:valid,
+  .form-select.is-valid,
+  input.form-select.parsley-success,
+  textarea.form-select.parsley-success {
+    background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%233b4863' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e")
+        no-repeat right 0.75rem center/8px 10px,
+      url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%2300cccc ' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e")
+        transparent no-repeat center right 1.75rem / calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+  }
+  .table.dtr-details {
+    border-color: $transparent-border;
+  }
+  table.dataTable > tbody > tr.child ul.dtr-details > li {
+    border-bottom-color: $transparent-border;
+  }
+  @media (max-width: 1143px) {
+    .table tr td:last-child {
+      border-left-color: $transparent-border;
+    }
+  }
+  .nav-tabs-line-brand {
+    .nav-link {
+      &.active {
+        background-color: transparent !important;
+      }
+    }
+  }
+  .description-block > .description-text {
+    color: $transparent-color;
+  }
+  .settings-main-icon i {
+    color: $white;
+  }
+  #checkoutsteps .item .thumb {
+    border-color: $transparent-border;
+  }
+  @media (min-width: 768px) {
+    #checkoutsteps .checkoutline {
+      background-color: $transparent-theme;
+    }
+  }
+  #checkoutsteps > .steps a {
+    color: $transparent-color;
+  }
+  #checkoutsteps .item .thumb {
+    border-color: $transparent-border;
+  }
+  #checkoutsteps .item {
+    border-bottom-color: $transparent-border;
+  }
+  .wizard > .content > .title {
+    color: $transparent-color;
+  }
+  .card-pay .tabs-menu.nav li {
+    border-right-color: $transparent-border;
+    border-left-color: $transparent-border;
+  }
+  .card-pay .tabs-menu.nav {
+    background: $transparent-theme;
+  }
+  @media (min-width: 768px) {
+    #checkoutsteps > .steps .number {
+      background-color: $transparent-theme;
+      color: $transparent-color;
+      border-color: $transparent-border;
+    }
+  }
+  @media (max-width: 767px) {
+    #checkoutsteps > .steps .number {
+      background-color: $transparent-theme;
+      color: $transparent-color;
+    }
+  }
+
+  @media (max-width: 767px) {
+    #checkoutsteps .checkoutline {
+      background-color: $transparent-theme;
+    }
+  }
+  @media (max-width: 767px) {
+    .card-pay .tabs-menu li {
+      border-bottom-color: $transparent-border;
+    }
+  }
+  .sign-favicon-a {
+    display: none;
+  }
+  .sign-favicon-b {
+    display: block;
+  }
+  .main-star i {
+    color: $transparent-color;
+  }
+  .SumoSelect > .optWrapper.multiple > .MultiControls > p:hover {
+    background-color: $transparent-theme;
+  }
+  .ff_fileupload_wrap table.ff_fileupload_uploads td.ff_fileupload_actions button {
+    border-color: $transparent-border;
+    background-color: $transparent-theme;
+    opacity: 1;
+  }
+  .SumoSelect > .CaptionCont > span.placeholder {
+    color: transparent;
+  }
+  .main-nav-column .nav-link span {
+    color: $transparent-color;
+  }
+  .dropdown-menu-start {
+    box-shadow: 0px 0px 15px 1px $transparent-shadow;
+  }
+
+  .sidebar {
+    border-left-color: $transparent-border;
+    border-right-color: $transparent-border;
+  }
+  @media (min-width: 992px) {
+    &.horizontal .app-sidebar {
+      border-bottom-color: $transparent-border !important;
+      border-top-color: $transparent-border;
+    }
+  }
+}
+.transparent-theme {
+  @-moz-document url-prefix() {
+    .app-sidebar.sidebar-scroll .main-sidebar-header {
+      background: $transparent-body;
+    }
+    .sticky.sticky-pin div.main-sidebar-header {
+      background: $transparent-body;
+    }
+  }
+}
+
+/************background-transparent-images***********************/
+body.transparent-theme.bg-img1 {
+  background: url(../img/media/bg-img1.jpg) !important;
+  background-blend-mode: overlay;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  content: "";
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  position: absolute;
+  .demo_changer {
+    background: url(../img/media/bg-img1.jpg) !important;
+    background-size: cover !important;
+    background-position: center !important;
+  }
+}
+
+body.transparent-theme.bg-img2 {
+  background: url(../img/media/bg-img2.jpg) !important;
+  background-blend-mode: overlay;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  content: "";
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  position: absolute;
+  .demo_changer {
+    background: url(../img/media/bg-img2.jpg) !important;
+    background-size: cover !important;
+    background-position: center !important;
+  }
+}
+
+body.transparent-theme.bg-img3 {
+  background: url(../img/media/bg-img3.jpg) !important;
+  background-blend-mode: overlay;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  content: "";
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  position: absolute;
+  .demo_changer {
+    background: url(../img/media/bg-img3.jpg) !important;
+    background-size: cover !important;
+    background-position: center !important;
+  }
+}
+
+body.transparent-theme.bg-img4 {
+  background: url(../img/media/bg-img4.jpg) !important;
+  background-blend-mode: overlay;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  content: "";
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  position: absolute;
+  .demo_changer {
+    background: url(../img/media/bg-img4.jpg) !important;
+    background-size: cover !important;
+    background-position: center !important;
+  }
+}
+/************background-transparent-images***********************/

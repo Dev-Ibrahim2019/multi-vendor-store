@@ -1,0 +1,83 @@
+$background: #ecf0fa;
+$default-color:#031b4e;
+$border:#eae8f1;
+$muted:#7987a1;
+
+/*Color variables*/
+$primary:var(--primary-bg-color); 
+$primary-hover:var(--primary-bg-hover); 
+$primary-border:var(--primary-bg-border); 
+$primary-1:var(--primary-1); 
+$primary-2:var(--primary-2); 
+$primary-3:var(--primary-3); 
+$primary-5:var(--primary-5); 
+$primary-8:var(--primary-8); 
+$darkprimary-transparent:var(--darkprimary-transparentcolor);
+$transparentprimary-transparent:var(--transparentprimary-transparentcolor);
+$secondary:#5f6d88;
+$pink:#f10075;
+$teal:#00cccc;
+$purple:#4800c9;
+$success:#22c03c;
+$warning:#fbbc0b;
+$danger:#ee335e;
+$info:#00b9ff;
+$orange:#fd7e14;
+$dark:#3b4863;
+$indigo:#ac50bb;
+$white:#fff;
+$black:#000;
+
+/*gray variables*/
+$gray-100:#ecf0fa;
+$gray-200:#dde2ef;
+$gray-300:#d0d7e8;
+$gray-400:#b9c2d8;
+$gray-500:#949eb7;
+$gray-600:#737f9e;
+$gray-700:#4d5875;
+$gray-800:#364261;
+$gray-900:#242f48;
+
+/*white variables*/
+$white-1:rgba(255, 255, 255, 0.1);
+$white-2:rgba(255, 255, 255, 0.2);
+$white-3:rgba(255, 255, 255, 0.3);
+$white-4 :rgba(255, 255, 255, 0.4);
+$white-5 :rgba(255, 255, 255, 0.5);
+$white-6 :rgba(255, 255, 255, 0.6);
+$white-7 :rgba(255, 255, 255, 0.7);
+$white-8 :rgba(255, 255, 255, 0.8);
+$white-9 :rgba(255, 255, 255, 0.9);
+$white-05:rgba(255, 255, 255, 0.05);
+$white-08:rgba(255, 255, 255, 0.08);
+$white-75:rgba(255, 255, 255, 0.075);
+
+/*black variables*/
+$black-1:rgba(0, 0, 0, 0.1);
+$black-2:rgba(0, 0, 0, 0.2);
+$black-3:rgba(0, 0, 0, 0.3);
+$black-4:rgba(0, 0, 0, 0.4);
+$black-5:rgba(0, 0, 0, 0.5);
+$black-6:rgba(0, 0, 0, 0.6);
+$black-7:rgba(0, 0, 0, 0.7);
+$black-8:rgba(0, 0, 0, 0.8);
+$black-9:rgba(0, 0, 0, 0.9);
+$black-05:rgba(0, 0, 0, 0.05);
+
+/*shadow variables*/
+$shadow:  #dadee8;
+
+$dark-theme:#1f2940;
+$dark-body:#141b2d ;
+$dark-color:#dde3ea;
+$dark-border:rgba(234, 237, 241, 0.2);
+$dark-shadow:rgba(255 ,255 ,255 , 0.1);
+
+//transparent-theme
+$transparent-color:rgba(255,255,255,0.7);
+$transparent-theme: rgba(0,0,0,0.2);
+$transparent-body: var(--transparent-body);
+$transparent-border: rgba(255,255,255,0.2);
+$transparent-shadow:rgba(0,0,0,0.1);
+$primary-gradient: linear-gradient(to  right, var(--primary-bg-color) 0%, #0db2de 100%);

@@ -1,0 +1,445 @@
+.input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+
+  > {
+    .form-control,
+    .form-control-plaintext,
+    .form-select,
+    .form-file {
+      position: relative;
+      flex: 1 1 auto;
+      width: 1%;
+      margin-bottom: 0;
+    }
+
+    .form-control + {
+      .form-control,
+      .form-select,
+      .form-file {
+        margin-left: -1px;
+      }
+    }
+
+    .form-control-plaintext + {
+      .form-control,
+      .form-select,
+      .form-file {
+        margin-left: -1px;
+      }
+    }
+
+    .form-select + {
+      .form-control,
+      .form-select,
+      .form-file {
+        margin-left: -1px;
+      }
+    }
+
+    .form-file + {
+      .form-control,
+      .form-select,
+      .form-file {
+        margin-left: -1px;
+      }
+    }
+
+    .form-control:focus,
+    .form-select:focus {
+      z-index: 3;
+    }
+
+    .form-file .form-file-input:focus {
+      ~ .form-file-label {
+        z-index: 3;
+      }
+
+      z-index: 4;
+    }
+
+    .form-control:not(:last-child),
+    .form-select:not(:last-child) {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    .form-control:not(:first-child),
+    .form-select:not(:first-child) {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    .form-file {
+      display: flex;
+      align-items: center;
+
+      &:not(:last-child) .form-file-label {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+
+        &::after {
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+        }
+      }
+
+      &:not(:first-child) .form-file-label {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+    }
+  }
+}
+
+.input-group-text,
+.input-group-text {
+  display: flex;
+}
+
+.input-group-text {
+  .btn,
+  .sp-container button {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.sp-container .input-group-text button {
+  position: relative;
+  z-index: 2;
+}
+
+.input-group-text {
+  .btn,
+  .sp-container button {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.sp-container .input-group-text button {
+  position: relative;
+  z-index: 2;
+}
+
+.input-group-text {
+  .btn:focus,
+  .sp-container button:focus {
+    z-index: 3;
+  }
+}
+
+.sp-container .input-group-text button:focus {
+  z-index: 3;
+}
+
+.input-group-text {
+  .btn:focus,
+  .sp-container button:focus {
+    z-index: 3;
+  }
+}
+
+.sp-container .input-group-text button:focus {
+  z-index: 3;
+}
+
+.input-group-text {
+  .btn + .btn,
+  .sp-container button + .btn {
+    margin-left: -1px;
+  }
+}
+
+.sp-container .input-group-text button + .btn,
+.input-group-text .sp-container .btn + button,
+.sp-container .input-group-text .btn + button,
+.input-group-text .sp-container button + button,
+.sp-container .input-group-text button + button {
+  margin-left: -1px;
+}
+
+.input-group-text {
+  .btn + .input-group-text,
+  .sp-container button + .input-group-text {
+    margin-left: -1px;
+  }
+}
+
+.sp-container .input-group-text button + .input-group-text {
+  margin-left: -1px;
+}
+
+.input-group-text {
+  .input-group-text + {
+    .input-group-text,
+    .btn {
+      margin-left: -1px;
+    }
+  }
+
+  .sp-container .input-group-text + button {
+    margin-left: -1px;
+  }
+}
+
+.sp-container .input-group-text .input-group-text + button {
+  margin-left: -1px;
+}
+
+.input-group-text {
+  .btn + .btn,
+  .sp-container button + .btn {
+    margin-left: -1px;
+  }
+}
+
+.sp-container .input-group-text button + .btn,
+.input-group-text .sp-container .btn + button,
+.sp-container .input-group-text .btn + button,
+.input-group-text .sp-container button + button,
+.sp-container .input-group-text button + button {
+  margin-left: -1px;
+}
+
+.input-group-text {
+  .btn + .input-group-text,
+  .sp-container button + .input-group-text {
+    margin-left: -1px;
+  }
+}
+
+.sp-container .input-group-text button + .input-group-text {
+  margin-left: -1px;
+}
+
+.input-group-text {
+  .input-group-text + {
+    .input-group-text,
+    .btn {
+      margin-left: -1px;
+    }
+  }
+
+  .sp-container .input-group-text + button {
+    margin-left: -1px;
+  }
+}
+
+.sp-container .input-group-text .input-group-text + button {
+  margin-left: -1px;
+}
+
+.input-group-text {
+  margin-right: -1px;
+}
+
+.input-group-text {
+  margin-left: -1px;
+}
+
+.input-group-text {
+  display: flex;
+  align-items: center;
+  padding: 0.375rem 0.75rem;
+  margin-bottom: 0;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $gray-700;
+  text-align: center;
+  white-space: nowrap;
+  background-color: $gray-200;
+  border: 1px solid $border;
+  border-radius: 3px;
+
+  input {
+    &[type="radio"],
+    &[type="checkbox"] {
+      margin-top: 0;
+    }
+  }
+}
+
+.input-group-lg > {
+  .form-control:not(textarea),
+  .form-select {
+    height: calc(1.5em + 1rem + 2px);
+  }
+
+  .form-control,
+  .form-select,
+  .input-group-text > .input-group-text,
+  .input-group-text > .input-group-text,
+  .input-group-text > .btn {
+    padding: 0.5rem 1rem;
+    font-size: 1.09375rem;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+  }
+}
+
+.sp-container .input-group-lg > .input-group-text > button,
+.input-group-lg > .input-group-text > .btn,
+.sp-container .input-group-lg > .input-group-text > button {
+  padding: 0.5rem 1rem;
+  font-size: 1.09375rem;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+}
+
+.input-group-sm > {
+  .form-control:not(textarea),
+  .form-select {
+    height: calc(1.5em + 0.5rem + 2px);
+  }
+
+  .form-control,
+  .form-select,
+  .input-group-text > .input-group-text,
+  .input-group-text > .input-group-text,
+  .input-group-text > .btn {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.76562rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
+  }
+}
+
+.sp-container .input-group-sm > .input-group-text > button,
+.input-group-sm > .input-group-text > .btn,
+.sp-container .input-group-sm > .input-group-text > button {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.76562rem;
+  line-height: 1.5;
+  border-radius: 0.2rem;
+}
+
+.input-group-lg > .form-select,
+.input-group-sm > .form-select {
+  padding-right: 1.75rem;
+}
+
+.input-group > .input-group-text > .btn,
+.sp-container .input-group > .input-group-text > button {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.input-group > {
+  .input-group-text > .input-group-text,
+  .input-group-text:not(:last-child) > .btn {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
+
+.sp-container .input-group > .input-group-text:not(:last-child) > button {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.input-group > .input-group-text {
+  &:not(:last-child) > .input-group-text,
+  &:last-child > .btn:not(:last-child):not(.dropdown-toggle) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
+
+.sp-container .input-group > .input-group-text:last-child > button:not(:last-child):not(.dropdown-toggle) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.input-group > .input-group-text {
+  &:last-child > .input-group-text:not(:last-child) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  > .btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+
+.sp-container .input-group > .input-group-text > button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.input-group > {
+  .input-group-text > .input-group-text,
+  .input-group-text:not(:first-child) > .btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+
+.sp-container .input-group > .input-group-text:not(:first-child) > button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.input-group > .input-group-text {
+  &:not(:first-child) > .input-group-text,
+  &:first-child > .btn:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+
+.sp-container .input-group > .input-group-text:first-child > button:not(:first-child),
+.input-group > .input-group-text:first-child > .input-group-text:not(:first-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* ###### 3.8 Input Group ###### */
+
+.input-group-text,
+.input-group-text {
+  border-radius: 0;
+}
+
+.input-group-text {
+  padding-top: 0;
+  padding-bottom: 0;
+  align-items: center;
+  border-radius: 0;
+}
+.input-group:not(.has-validation) > .dropdown-toggle:nth-last-child(n + 3),
+.input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+.input-group
+  > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+.input-group .btn {
+  z-index: 0;
+}
+.input-group.has-validation > .dropdown-toggle:nth-last-child(n + 4),
+.input-group.has-validation > :nth-last-child(n + 3):not(.dropdown-toggle):not(.dropdown-menu) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+.input-group .form-control.is-invalid,
+.input-group .form-select.is-invalid,
+.was-validated .input-group .form-control:invalid,
+.was-validated .input-group .form-select:invalid {
+  z-index: 1;
+}

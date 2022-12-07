@@ -1,0 +1,234 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project        :   VALEX - HTML5 Bootstrap Admin Template
+Version        :   V.1.0
+Create Date    :   09/05/20
+Copyright      :   Spruko Technologies Private Limited 
+Author         :   SprukoSoft
+Author URL     :   https://themeforest.net/user/sprukosoft
+Support	       :   support@spruko.com
+License        :   Licensed under ThemeForest License
+
+-------------------------------------------------------------------*/
+
+/*
+1.  Accordions
+2.  Alerts
+3.  Badges
+4.  Breadcrumbs
+5.  Buttons
+6.  Card
+7.  Carousel
+8.  Custom
+9.  Dropdown
+10. Forms
+11. Grid
+12. Input-group
+13. Modals
+14. Navigation
+15. Pagination
+16. Popover
+17. Progress
+18. Tables
+19. Tabs
+20. Toast
+21. Tooltip
+22. Checkbox
+23. Countdown
+24. Custom-control
+25. Custom-styles
+26. Ecommerce
+27. I.E
+28. Image
+29  Jumborton
+30  Listgroup
+31. Navbar
+32. P-scroll
+33  Radio
+34. Rating
+35. Tags
+36. Timeline
+37. Toggle
+38. Widgets
+39. Footer
+40. Header
+41. Horizontal-menu
+42. Iconbar
+43. Main-content
+44. Profile
+45. Rtl
+46. Sidebar
+47. Sidemenu
+48. Style-Dark
+49. Chart
+50. Datatable
+51. Date-picker
+52. Date-time-picker
+53. Jquery-Steps
+54. Jqvmap
+55. Parsely
+56. Rangeslider
+57. Select2
+58. Spectrum
+59. Plugins
+60. Calendar
+61. Chat
+62. Contacts
+63. Error
+64. Invoice
+65. Mail
+66. Background
+67. Border
+68. Height
+69. Margin
+70. Opacity
+71. Padding
+72. Position
+73. Typography
+74. Width
+*/
+
+/* ############### FONTS IMPORT ############### */
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
+
+/* ######## BOOTSTRAP ######## */
+@import "variables";
+@import "bootstrap/accordion";
+@import "bootstrap/alerts";
+@import "bootstrap/badge";
+@import "bootstrap/breadcrumbs";
+@import "bootstrap/buttons";
+@import "bootstrap/cards";
+@import "bootstrap/carousel";
+@import "bootstrap/custom";
+@import "bootstrap/dropdown";
+@import "bootstrap/forms";
+@import "bootstrap/forms";
+@import "bootstrap/grid";
+@import "bootstrap/input-group";
+@import "bootstrap/modals";
+@import "bootstrap/nav";
+@import "bootstrap/paginations";
+@import "bootstrap/popover";
+@import "bootstrap/progress";
+@import "bootstrap/tables";
+@import "bootstrap/toast";
+@import "bootstrap/tooltip";
+@import "bootstrap/tabs";
+
+/*  ######## CUSTOM-STYLES ######## */
+@import "custom/checkbox";
+@import "custom/countdown";
+@import "custom/custom-control";
+@import "custom/image";
+@import "custom/listgroup";
+@import "custom/navbar";
+@import "custom/p-scroll";
+@import "custom/radio";
+@import "custom/ratting";
+@import "custom/tags";
+@import "custom/timeline";
+@import "custom/toggle";
+@import "custom/custom-styles";
+@import "custom/Ie";
+@import "custom/ecommerce";
+@import "custom/widgets";
+
+/* ######## LAYOUT-STYLES ######## */
+@import "layout/footer";
+@import "layout/header";
+@import "layout/horizontal-menu";
+@import "layout/iconbar";
+@import "layout/maincontent";
+@import "layout/profile";
+@import "layout/rtl";
+@import "layout/sidebar";
+@import "layout/sidemenu";
+@import "layout/style-dark";
+@import "layout/style-transparent";
+@import "layout/menu-styles";
+@import "layout/header-styles";
+@import "layout/switcher-styles";
+
+/* ######## LIB-STYLES ######## */
+@import "lib/chart";
+@import "lib/datatable";
+@import "lib/datepicker";
+@import "lib/datetimepicker";
+@import "lib/jquerysteps";
+@import "lib/jqvmap";
+@import "lib/parsely";
+@import "lib/rangesliders";
+@import "lib/select2";
+@import "lib/spectrum";
+
+/* ######## Plugins ######## */
+@import "plugins/accordion";
+@import "plugins/amazeui.datetimepicker";
+@import "plugins/bootstrap-datepicker";
+@import "plugins/buttons.bootstrap5";
+@import "plugins/classic";
+@import "plugins/countdown";
+@import "plugins/dataTables.bootstrap5";
+@import "plugins/dtree";
+@import "plugins/fancy_fileupload";
+@import "plugins/fileupload";
+@import "plugins/fullcalendar";
+@import "plugins/gallery";
+@import "plugins/inputtags";
+@import "plugins/ion.rangeSlider";
+@import "plugins/ion.rangeSlider.skinFlat";
+@import "plugins/jquery-ui-darggable";
+@import "plugins/jquery.simple-dtpicker";
+@import "plugins/jquery.steps";
+@import "plugins/jqvmap";
+@import "plugins/leaflet";
+@import "plugins/lightslider";
+@import "plugins/monolith";
+@import "plugins/morris";
+@import "plugins/multislider";
+@import "plugins/nano";
+@import "plugins/nice-select";
+@import "plugins/notifIt";
+@import "plugins/owl.carousel";
+@import "plugins/picker";
+@import "plugins/prism";
+@import "plugins/pscroll";
+@import "plugins/quill.bubble";
+@import "plugins/quill.snow";
+@import "plugins/responsive.bootstrap5";
+@import "plugins/richtext";
+@import "plugins/select2";
+@import "plugins/sidebar";
+@import "plugins/smartphoto";
+@import "plugins/spectrum";
+@import "plugins/star-rating-svg";
+@import "plugins/summernote";
+@import "plugins/summernote1";
+@import "plugins/sumoselect";
+@import "plugins/sweetalert";
+@import "plugins/tab-style";
+@import "plugins/telephoneinput";
+@import "plugins/timeline";
+@import "plugins/treeview";
+@import "plugins/twentytwenty";
+
+/* ######## TEMP-STYLES ######## */
+@import "temp/calendar";
+@import "temp/chat";
+@import "temp/contact";
+@import "temp/error";
+@import "temp/invoice";
+@import "temp/mail";
+
+/* ######## UTILITIES-STYLES ######## */
+@import "util/background";
+@import "util/border";
+@import "util/height";
+@import "util/margin";
+@import "util/opacity";
+@import "util/padding";
+@import "util/position";
+@import "util/typography";
+@import "util/width";
