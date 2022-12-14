@@ -37,7 +37,9 @@ class FortifyServiceProvider extends ServiceProvider
 
         $this->app->instance(LoginResponse::class, new class implements LoginResponse {
             public function toResponse($request) {
-                if ($request->user('admin')) {
+                // if ($request->user('admin'))
+                if (Config::get('fortify.guard') == 'admin') {
+
                     return redirect()->intended('admin/dashboard');
                 }
 

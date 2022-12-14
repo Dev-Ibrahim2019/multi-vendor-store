@@ -25,7 +25,7 @@ class AccessTokensController extends Controller
                 'code' => 100,
                 'token' => $token->plainTextToken,
                 'user' => $user,
-            ], 201); //Response::HTTP_CRAETED
+            ], 201); //Response::HTTP_CREATED
         }
         return response()->json([
             'code' => 0,

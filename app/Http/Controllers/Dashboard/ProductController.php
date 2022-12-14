@@ -52,27 +52,46 @@ class ProductController extends Controller
     public function store(Request $request)
     {
         $request->merge([
-            'slug' => Str::slug($request->post('name'))
+            'slug' => Str::slug($request->post('name')),
         ]);
-        $data = $request->except(['image', 'tag']);
+        $data = $request->except('image', 'tag');
         $data['image'] = $this->uploadImage($request);
-//        dd($data['image']);
+
         $product = Product::create($data);
-        $tags = json_decode($request->post('tag'));
+
+        $tags = explode(',', $request->post('tag'));
         $tag_ids = [];
+
         $saved_tags = Tag::all();
+
         foreach($tags as $item) {
-            $slug = Str::slug($item->value);
+            $slug = Str::slug($item);
             $tag = $saved_tags->where('slug', $slug)->first();
-            if (!$tag) {
+            if (! $tag) {
                 $tag = Tag::create([
-                    'name' => $item->value,
-                    'slug' => $slug
+                    'name' => $item,
+                    'slug' => $slug,
                 ]);
             }
             $tag_ids[] = $tag->id;
         }
         $product->tags()->sync($tag_ids);
+
+//         $tags = json_decode($request->post('tag'));
+//         $tag_ids = [];
+//         $saved_tags = Tag::all();
+//         foreach($tags as $item) {
+//             $slug = Str::slug($item->value);
+//             $tag = $saved_tags->where('slug', $slug)->first();
+//             if (!$tag) {
+//                 $tag = Tag::create([
+//                     'name' => $item->value,
+//                     'slug' => $slug
+//                 ]);
+//             }
+//             $tag_ids[] = $tag->id;
+//         }
+//         $product->tags()->sync($tag_ids);
         return redirect()->back()->with([
             'message' => 'Saved Successfully',
             'type' => 'success'

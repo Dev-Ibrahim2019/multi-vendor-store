@@ -36,26 +36,19 @@
 <div class="form-group mb-0 mt-3 justify-content-end">
     <div>
         <button type="submit" class="btn btn-primary">{{ $button_label ?? 'Save' }}</button>
-        <a href="{{ route('dashboard.products.index') }}" class="btn btn-secondary ms-4">back</a>
+        <a href="{{ route('dashboard.products.index') }}" class="btn btn-secondary ms-4">Display Products</a>
     </div>
 </div>
 
 @push('styles')
-    <link href="https://cdn.jsdelivr.net/npm/@yaireo/tagify/dist/tagify.css" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('assets/css/tagify.css') }}" rel="stylesheet" type="text/css" />
 @endpush
 
 @push('scripts')
-    <script src="https://cdn.jsdelivr.net/npm/@yaireo/tagify"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@yaireo/tagify/dist/tagify.polyfills.min.js"></script>
+    <script src="{{ asset('assets/js/tagify.js') }}"></script>
+    <script src="{{ asset('assets/js/tagify.min.js') }}"></script>
     <script>
-        var inputElm = document.getElementById('tag'),
-            tagify = new Tagify(inputElm);
-
-        inputElm.addEventListener('change', onChange)
-
-        function onChange(e) {
-            // outputs a String
-            console.log(e.target.value)
-        }
+        var input = document.getElementById("tag");
+        new Tagify(input)
     </script>
 @endpush
