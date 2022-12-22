@@ -1,5 +1,5 @@
 @extends('layouts.dashboard')
-@section('title', 'Categories')
+@section('title', 'Trash Categories')
 @section('breadcrumb')
     @parent
     <span class="text-muted mt-1 tx-13 ms-2 mb-0">/ Category</span>
@@ -9,15 +9,8 @@
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-header d-flex justify-content-between align-items-center">
-                    <h3 class="card-title">Category List</h3>
-                    <div class="d-flex">
-                        @if (Auth::user()->can('category.create'))
-                            <a class="btn btn-primary text-light mx-3"
-                                href="{{ route('dashboard.categories.create') }}">Create
-                                Category</a>
-                        @endif
-                        <a class="btn btn-danger text-light" href="{{ route('dashboard.categories.trash') }}">Trash</a>
-                    </div>
+                    <h3 class="card-title">Category Trashed</h3>
+                    <a class="btn btn-primary text-light" href="{{ route('dashboard.categories.index') }}">Back</a>
                 </div>
                 <form action="{{ URL::current() }}" method="GET" class="d-flex justify-content-betweem m-4">
                     <x-form.input name="name" placeholder="Name" :value="request('name')" />
@@ -36,10 +29,8 @@
                                     <th class="wd-10p"></th>
                                     <th class="wd-5p">ID</th>
                                     <th class="wd-20p">Name</th>
-                                    <th class="wd-15p">Category</th>
-                                    <th class="wd-15p">Products #</th>
                                     <th class="wd-10p">Status</th>
-                                    <th class="wd-20p">Created At</th>
+                                    <th class="wd-20p">Deleted At</th>
                                     <th class="wd-10p"></th>
                                 </tr>
                             </thead>
@@ -47,46 +38,42 @@
                                 @forelse ($categories as $category)
                                     <tr>
                                         <td>
-                                            <img src="{{ $category->image_url }}" alt="" height="50px"
-                                                width="70px" class="rounded">
+                                            <img src="{{ asset('storage/' . $category->image) }}" alt=""
+                                                height="50px" width="70px" class="rounded">
                                         </td>
                                         <td>{{ $category->id }}</td>
-                                        <td><a
-                                                href="{{ route('dashboard.categories.show', $category->id) }}">{{ $category->name }}</a>
-                                        </td>
-                                        {{-- <td>{{ $category->parent_name }}</td> --}}
-                                        <td>{{ $category->parent->name }}</td>
-                                        <td>{{ $category->products_number }}</td>
+                                        <td>{{ $category->name }}</td>
                                         <td><span
                                                 class="badge bg-{{ $category->status == 'active' ? 'success' : 'danger' }} me-1">{{ $category->status }}</span>
                                         </td>
-                                        <td>{{ $category->created_at }}</td>
+                                        <td>{{ $category->deleted_at }}</td>
                                         <td name="bstable-actions">
                                             <div class="btn-list d-flex">
-                                                @can('category.update')
-                                                    <a id="bEdit"
-                                                        href="{{ route('dashboard.categories.edit', $category->id) }}"
-                                                        class="btn btn-sm btn-primary mx-3">
-                                                        <span class="fe fe-edit"> </span>
-                                                    </a>
-                                                @endcan
-                                                @can('category.delete')
-                                                    <form action="{{ route('dashboard.categories.destroy', $category->id) }}"
-                                                        method="POST">
-                                                        @csrf
-                                                        {{-- method spoofing --}}
-                                                        @method('DELETE')
-                                                        <button id="bDel" type="submit" class="btn btn-sm btn-danger">
-                                                            <span class="fe fe-trash-2"> </span>
-                                                        </button>
-                                                    </form>
-                                                @endcan
+                                                <form action="{{ route('dashboard.categories.restore', $category->id) }}"
+                                                    method="POST">
+                                                    @csrf
+                                                    @method('PUT')
+                                                    <button id="bEdit" type="submit"
+                                                        class="btn btn-sm btn-info mx-3">
+                                                        <i class="fa fa-undo" aria-hidden="true"></i>
+
+                                                    </button>
+                                                </form>
+                                                <form
+                                                    action="{{ route('dashboard.categories.force-delete', $category->id) }}"
+                                                    method="POST">
+                                                    @csrf
+                                                    @method('DELETE')
+                                                    <button id="bDel" type="submit" class="btn btn-sm btn-danger">
+                                                        <span class="fe fe-trash-2"> </span>
+                                                    </button>
+                                                </form>
                                             </div>
                                         </td>
                                     </tr>
                                 @empty
                                     <tr>
-                                        <td class="text-center" colspan="7">No Categories Defined</td>
+                                        <td class="text-center" colspan="6">No Categories Defined</td>
                                     </tr>
                                 @endforelse
                             </tbody>

@@ -30,12 +30,12 @@
                 <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z" />
             </svg>
         </div>
-            <ul class="side-menu">
-                @foreach ($items as $item)
-                    @if (isset($item['title']))
-                        <li class="side-item side-item-category">{{ $item['title'] }}</li>
-                    @endif
-                    <li class="slide"i>
+        <ul class="side-menu">
+            @foreach ($items as $item)
+                @if (isset($item['title']))
+                    <li class="side-item side-item-category">{{ $item['title'] }}</li>
+                @endif
+                <li class="slide"i>
                     <a class="side-menu__item" @if (isset($item['list'])) data-bs-toggle="slide" @endif
                         href="{{ !isset($item['list']) ? route('dashboard.dashboard') : 'javascript:void(0);' }}"> <i
                             class="{{ $item['icon'] }} side-menu__icon"></i><span
@@ -46,6 +46,7 @@
                     </a>
                     <ul class="slide-menu">
                         <li class="side-menu__label1"><a href="javascript:void(0);">{{ $item['main-title'] }}</a></li>
+                        {{-- @if (isset($item['list']) && isset($item['sub-ability']) && Auth::user()->can($item['sub-ability'])) --}}
                         @if (isset($item['list']))
                             @for ($i = 0; $i < count($item['list']); $i++)
                                 <li><a class="slide-item" href="{{ route($item['route'][$i]) }}">

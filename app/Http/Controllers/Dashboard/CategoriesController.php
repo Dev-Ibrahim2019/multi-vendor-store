@@ -8,6 +8,7 @@ use App\Models\Category;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
@@ -21,6 +22,11 @@ class CategoriesController extends Controller
      */
     public function index()
     {
+
+        if (Gate::denies('category.view')) {
+            abort(403);
+        }
+
         $request = request();
 
         // $query = Category::query();
@@ -79,6 +85,10 @@ $categories = Category::with('parent')
      */
     public function create()
     {
+        if (! Gate::allows('category.create')) {
+            abort (403);
+        }
+
         $parents = Category::all();
         $category = new Category();
         return view('dashboard.categories.create', compact('parents', 'category'));
@@ -87,11 +97,13 @@ $categories = Category::with('parent')
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request   
+     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
     public function store(CategoryRequest $request)
     {
+
+        Gate::authorize('category.create');
         // validation in CategoryRequset
         // $request->validate(Category::rules());
 
@@ -122,6 +134,9 @@ $categories = Category::with('parent')
      */
     public function show(Category $category)
     {
+        if (Gate::define('category.view')) {
+            abort(403);
+        }
         return view('dashboard.categories.show', ['category' => $category]);
     }
 
@@ -133,6 +148,9 @@ $categories = Category::with('parent')
      */
     public function edit($id)
     {
+
+        Gate::authorize('category.update');
+
         try {
             $category = Category::findOrFail($id);
         } catch (Exception $e) {
@@ -160,6 +178,8 @@ $categories = Category::with('parent')
      */
     public function update(CategoryRequest $request, $id)
     {
+        // Gate::authorize('category.update'); // I make authorize in CategoryReqest
+
         $category = Category::findOrFail($id);
 
         $old_image = $category->image;
@@ -191,6 +211,9 @@ $categories = Category::with('parent')
      */
     public function destroy($id)
     {
+
+        Gate::authorize('category.dalete');
+
         $category = Category::findOrFail($id);
         $category->delete();
 

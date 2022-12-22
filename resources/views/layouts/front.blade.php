@@ -312,7 +312,7 @@
     {{ $breadcrumb ?? '' }}
     <!-- End Breadcrumbs -->
 
-    {{ $slot }}
+    {{ $slot }} 
 
     <!-- Start Footer Area -->
     <footer class="footer">

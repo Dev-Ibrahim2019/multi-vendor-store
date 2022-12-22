@@ -13,3 +13,4 @@ class ProductController extends Controller
         return view('front.products.show', compact('product'));
     }
 }
+

@@ -1,0 +1,117 @@
+<?php
+
+namespace App\Http\Controllers\Dashboard;
+
+use App\Http\Controllers\Controller;
+use App\Models\Role;
+use App\Models\RoleAbility;
+use Illuminate\Http\Request;
+
+class RoleController extends Controller
+{
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+        $roles = Role::paginate();
+        return view('dashboard.roles.index', compact('roles'));
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        return view('dashboard.roles.create', [
+            'role' => new Role(),
+        ]);
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+        $request->validate([
+            'name' => 'require|string|max:255',
+            'abilities' => 'required|array',
+        ]);
+
+        $role = Role::createWithAbilities($request);
+
+        return redirect()
+            ->route('dashboard.roles.index')->with([
+                'message' => 'Role created successfully',
+                'type' => 'success',
+            ]);
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
+    {
+        //
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit(Role $role)
+    {
+        return view('dashboard.roles.edit', compact('role'));
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, Role $role)
+    {
+        $request->validate([
+            'name' => 'require|string|max:255',
+            'abilities' => 'required|array',
+        ]);
+
+        $role->updateWithAbilities($request);
+
+        return redirect()
+            ->route('dashboard.roles.index')->with([
+                'message' => 'Role created successfully',
+                'type' => 'success',
+            ]);
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($id)
+    {
+        Role::destroy($id);
+        return redirect()
+        ->route('dashboard.roles.index')->with([
+            'message' => 'Role deleted successfully',
+            'type' => 'danger',
+        ]);
+    }
+}
