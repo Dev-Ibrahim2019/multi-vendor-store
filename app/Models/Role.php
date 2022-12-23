@@ -13,6 +13,11 @@ class Role extends Model
 
     protected $fillable = ['name'];
 
+
+    public function abilities() {
+        return $this->hasMany(RoleAbility::class);
+    }
+
     public static function createWithAbilities (Request $request) {
 
         // any request make more than action(crate, update , ... ) -> put the operation into transaction
@@ -22,11 +27,11 @@ class Role extends Model
                 'name' => $request->post('name'),
             ]);
 
-            foreach ($request->post('abilities') as $ability) {
+            foreach ($request->post('abilities') as $ability => $value) {
                 RoleAbility::create([
                     'role_id' => $role->id,
                     'ability' => $ability,
-                    'type' => 'allow',
+                    'type' => $value,
                 ]);
             }
 
@@ -49,12 +54,12 @@ class Role extends Model
                 'name' => $request->post('name'),
             ]);
 
-            foreach ($request->post('abilities') as $ability) {
+            foreach ($request->post('abilities') as $ability => $value) {
                 RoleAbility::updateOrCreate([
                     'role_id' => $this->id,
                     'ability' => $ability,
                 ], [
-                    'type' => 'allow',
+                    'type' => $value,
                 ]);
             }
 

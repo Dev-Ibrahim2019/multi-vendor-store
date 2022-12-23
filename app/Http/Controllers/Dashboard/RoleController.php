@@ -41,7 +41,7 @@ class RoleController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'name' => 'require|string|max:255',
+            'name' => 'required|string|max:255',
             'abilities' => 'required|array',
         ]);
 
@@ -73,7 +73,9 @@ class RoleController extends Controller
      */
     public function edit(Role $role)
     {
-        return view('dashboard.roles.edit', compact('role'));
+        $role_abilities = $role->abilities()->pluck('type', 'ability')->toArray();
+        // dd($role_abilities);
+        return view('dashboard.roles.edit', compact('role', 'role_abilities'));
     }
 
     /**
@@ -86,7 +88,7 @@ class RoleController extends Controller
     public function update(Request $request, Role $role)
     {
         $request->validate([
-            'name' => 'require|string|max:255',
+            'name' => 'required|string|max:255',
             'abilities' => 'required|array',
         ]);
 
@@ -94,7 +96,7 @@ class RoleController extends Controller
 
         return redirect()
             ->route('dashboard.roles.index')->with([
-                'message' => 'Role created successfully',
+                'message' => 'Role Updated successfully',
                 'type' => 'success',
             ]);
     }
