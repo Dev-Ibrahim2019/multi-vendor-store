@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'categories.view' => 'View categories',
+    'categories.view' => __('View categories'),
     'categories.create' => 'Create categories',
     'categories.update' => 'Update categories',
     'categories.delete' => 'Delete categories',
@@ -25,6 +25,5 @@ return [
     'roles.create' => 'Create roles',
     'roles.update' => 'Update roles',
     'roles.delete' => 'Delete roles',
-
 ];
 

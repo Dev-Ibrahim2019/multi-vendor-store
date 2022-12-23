@@ -1,5 +1,5 @@
 @extends('layouts.dashboard')
-@section('title', 'Categories')
+@section('title', 'Roles')
 @section('breadcrumb')
     @parent
     <span class="text-muted mt-1 tx-13 ms-2 mb-0">/ Role</span>

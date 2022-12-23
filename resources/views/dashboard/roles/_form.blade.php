@@ -5,7 +5,7 @@
 <fieldset class="border p-4">
     <legend>{{ __('Abilities') }}</legend>
 
-    @foreach (config('abilities') as $ability_code => $ability_name)
+    @foreach (app('abilities') as $ability_code => $ability_name)
         <div class="row mb-1">
             <div class="col-md-6">
                 {{ $ability_name }}
@@ -26,6 +26,6 @@
 <div class="form-group mb-0 mt-3 justify-content-end">
     <div>
         <button type="submit" class="btn btn-primary">{{ $button_label ?? 'Save' }}</button>
-        <a href="{{ route('dashboard.categories.index') }}" class="btn btn-secondary ms-4">back</a>
+        <a href="{{ route('dashboard.roles.index') }}" class="btn btn-secondary ms-4">show roles</a>
     </div>
 </div>

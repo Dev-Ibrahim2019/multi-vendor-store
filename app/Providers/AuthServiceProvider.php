@@ -17,6 +17,15 @@ class AuthServiceProvider extends ServiceProvider
         // 'App\Models\Model' => 'App\Policies\ModelPolicy',
     ];
 
+
+    public function register() {
+        parent::register();
+
+        $this->app->bind('abilities', function () {
+            return include base_path('data/abilities.php');
+        });
+    }
+
     /**
      * Register any authentication / authorization services.
      *
@@ -26,19 +35,10 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies();
 
-        Gate::define('category.view', function($user) {
-            return true;
-        });
-
-        Gate::define('category.create', function($user) {
-            return true;
-        });
-
-        Gate::define('category.update', function($user) {
-            return false;
-        });
-        Gate::define('category.dalete', function($user) {
-            return false;
-        });
+        foreach ($this->app->make('abilities') as $code => $label) {
+            Gate::define($code, function ($user) use ($code) {
+                return $user->hasAbility($code);
+            });
+        }
     }
 }
