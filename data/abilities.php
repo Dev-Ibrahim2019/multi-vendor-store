@@ -21,9 +21,15 @@ return [
     'users.update' => 'Update users',
     'users.delete' => 'Delete users',
 
+    'admins.view' => 'View admins',
+    'admins.create' => 'Create admins',
+    'admins.update' => 'Update admins',
+    'admins.delete' => 'Delete admins',
+
     'roles.view' => 'View roles',
     'roles.create' => 'Create roles',
     'roles.update' => 'Update roles',
     'roles.delete' => 'Delete roles',
+    'roles.restore' => __('Restore roles'),
+    'roles.force-delete' => __('Force Delete roles'),
 ];
-

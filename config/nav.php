@@ -10,10 +10,16 @@ return [
     ],
     [
         'title' => 'Human Resources',
+        'icon' => 'fa fa-user-circle',
+        'main-title' => 'Admins',
+        'list' => ['Index', 'Create'],
+        'route' => ['dashboard.admins.index', 'dashboard.admins.create']
+    ],
+    [
         'icon' => 'fa fa-user',
         'main-title' => 'Users',
         'list' => ['Index', 'Create'],
-        'route' => ['dashboard.categories.index', 'dashboard.categories.create']
+        'route' => ['dashboard.users.index', 'dashboard.users.create']
     ],
     [
         'icon' => 'ti-shield',

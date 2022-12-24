@@ -15,6 +15,6 @@ class Admin extends User {
         HasRoles;
 
     protected $fillable = [
-        'name', 'username', 'email', 'phone_number', 'password', 'super_admin', 'status'
+        'name', 'username', 'email', 'phone_number', 'password', 'super_admin', 'status', 
     ];
 }

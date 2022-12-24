@@ -4,18 +4,12 @@ namespace App\Http\Controllers\Dashboard;
 
 use App\Http\Controllers\Controller;
 use App\Models\Role;
-use App\Models\RoleAbility;
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Gate;
 
-class RoleController extends Controller
+class UserController extends Controller
 {
-
-    public function __construct()
-    {
-        $this->authorizeResource(Role::class, 'role');
-    }
-
-
     /**
      * Display a listing of the resource.
      *
@@ -23,8 +17,10 @@ class RoleController extends Controller
      */
     public function index()
     {
-        $roles = Role::paginate();
-        return view('dashboard.roles.index', compact('roles'));
+        Gate::authorize('users.view');
+
+        $users = User::paginate();
+        return view('dashboard.users.index', compact('users'));
     }
 
     /**
@@ -34,8 +30,16 @@ class RoleController extends Controller
      */
     public function create()
     {
-        return view('dashboard.roles.create', [
-            'role' => new Role(),
+        // return view('dashboard.users.create', [
+        //     'roles' => Role::all(),
+        //     'user' => new User(),
+        // ]);
+        $user = new User ();
+        $user_roles = $user->roles()->pluck('id')->toArray();
+        return view('dashboard.users.create', [
+            'roles' => Role::all(),
+            'user' => $user,
+            'user_roles' => $user_roles,
         ]);
     }
 
@@ -49,16 +53,15 @@ class RoleController extends Controller
     {
         $request->validate([
             'name' => 'required|string|max:255',
-            'abilities' => 'required|array',
+            'roles' => 'required|array',
         ]);
 
-        $role = Role::createWithAbilities($request);
+        $user = User::create($request->all());
+        $user->roles()->attach($request->roles);
 
         return redirect()
-            ->route('dashboard.roles.index')->with([
-                'message' => 'Role created successfully',
-                'type' => 'success',
-            ]);
+            ->route('dashboard.users.index')
+            ->with('success', 'User created successfully');
     }
 
     /**
@@ -78,11 +81,12 @@ class RoleController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Role $role)
+    public function edit(User $user)
     {
-        $role_abilities = $role->abilities()->pluck('type', 'ability')->toArray();
-        // dd($role_abilities);
-        return view('dashboard.roles.edit', compact('role', 'role_abilities'));
+        $roles = Role::all();
+        $user_roles = $user->roles()->pluck('id')->toArray();
+
+        return view('dashboard.users.edit', compact('user', 'roles', 'user_roles'));
     }
 
     /**
@@ -92,20 +96,19 @@ class RoleController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Role $role)
+    public function update(Request $request, User $user)
     {
         $request->validate([
             'name' => 'required|string|max:255',
-            'abilities' => 'required|array',
+            'roles' => 'required|array',
         ]);
 
-        $role->updateWithAbilities($request);
+        $user->update($request->all());
+        $user->roles()->sync($request->roles);
 
         return redirect()
-            ->route('dashboard.roles.index')->with([
-                'message' => 'Role Updated successfully',
-                'type' => 'success',
-            ]);
+            ->route('dashboard.users.index')
+            ->with('success', 'User updated successfully');
     }
 
     /**
@@ -116,11 +119,9 @@ class RoleController extends Controller
      */
     public function destroy($id)
     {
-        Role::destroy($id);
+        User::destroy($id);
         return redirect()
-        ->route('dashboard.roles.index')->with([
-            'message' => 'Role deleted successfully',
-            'type' => 'danger',
-        ]);
+            ->route('dashboard.users.index')
+            ->with('success', 'User deleted successfully');
     }
 }

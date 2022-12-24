@@ -3,19 +3,12 @@
 namespace App\Http\Controllers\Dashboard;
 
 use App\Http\Controllers\Controller;
+use App\Models\Admin;
 use App\Models\Role;
-use App\Models\RoleAbility;
 use Illuminate\Http\Request;
 
-class RoleController extends Controller
+class AdminController extends Controller
 {
-
-    public function __construct()
-    {
-        $this->authorizeResource(Role::class, 'role');
-    }
-
-
     /**
      * Display a listing of the resource.
      *
@@ -23,9 +16,9 @@ class RoleController extends Controller
      */
     public function index()
     {
-        $roles = Role::paginate();
-        return view('dashboard.roles.index', compact('roles'));
-    }
+        $admins = Admin::paginate();
+        return view('dashboard.admins.index', compact('admins'));
+    }   
 
     /**
      * Show the form for creating a new resource.
@@ -34,8 +27,12 @@ class RoleController extends Controller
      */
     public function create()
     {
-        return view('dashboard.roles.create', [
-            'role' => new Role(),
+        $admin = new Admin();
+        $admin_roles = $admin->roles()->pluck('id')->toArray();
+        return view('dashboard.admins.create', [
+            'roles' => Role::all(),
+            'admin' => $admin,
+            'admin_roles' => $admin_roles,
         ]);
     }
 
@@ -49,16 +46,19 @@ class RoleController extends Controller
     {
         $request->validate([
             'name' => 'required|string|max:255',
-            'abilities' => 'required|array',
+            'roles' => 'required|array',
         ]);
 
-        $role = Role::createWithAbilities($request);
+        $admin = Admin::create($request->all());
+        $admin->roles()->attach($request->roles);
 
         return redirect()
-            ->route('dashboard.roles.index')->with([
-                'message' => 'Role created successfully',
-                'type' => 'success',
+            ->route('dashboard.admins.index')
+            ->with([
+                'message' => 'Admin Created Successfully',
+                'type' => 'success'
             ]);
+
     }
 
     /**
@@ -78,11 +78,11 @@ class RoleController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Role $role)
+    public function edit(Admin $admin)
     {
-        $role_abilities = $role->abilities()->pluck('type', 'ability')->toArray();
-        // dd($role_abilities);
-        return view('dashboard.roles.edit', compact('role', 'role_abilities'));
+        $roles = Role::all();
+        $admin_roles = $admin->roles()->pluck('id')->toArray();
+        return view('dashboard.admins.edit', compact('admin', 'roles', 'admin_roles'));
     }
 
     /**
@@ -92,20 +92,23 @@ class RoleController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Role $role)
+    public function update(Request $request, Admin $admin)
     {
         $request->validate([
             'name' => 'required|string|max:255',
-            'abilities' => 'required|array',
+            'roles' => 'required|array'
         ]);
 
-        $role->updateWithAbilities($request);
+        $admin->update($request->all());
+        $admin->roles()->sync($request->roles);
 
         return redirect()
-            ->route('dashboard.roles.index')->with([
-                'message' => 'Role Updated successfully',
+            ->route('dashboard.admins.index')
+            ->with([
+                'message' => 'Admin Updated Successfully',
                 'type' => 'success',
             ]);
+
     }
 
     /**
@@ -116,11 +119,12 @@ class RoleController extends Controller
      */
     public function destroy($id)
     {
-        Role::destroy($id);
+        Admin::destroy($id);
         return redirect()
-        ->route('dashboard.roles.index')->with([
-            'message' => 'Role deleted successfully',
-            'type' => 'danger',
-        ]);
+            ->back()
+            ->with([
+                'message' => 'Admin Deleted Successfully',
+                'type' => 'errer',
+            ]);
     }
 }

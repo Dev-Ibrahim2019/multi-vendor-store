@@ -1,9 +1,11 @@
 <?php
 
+use App\Http\Controllers\Dashboard\AdminController;
 use App\Http\Controllers\Dashboard\CategoriesController;
 use App\Http\Controllers\Dashboard\ProductController;
 use App\Http\Controllers\Dashboard\profileController;
 use App\Http\Controllers\Dashboard\RoleController;
+use App\Http\Controllers\Dashboard\UserController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Middleware\CheckUserType;
 use Illuminate\Support\Facades\Route;
@@ -27,6 +29,8 @@ Route::group([
         'categories' => CategoriesController::class,
         'products' => ProductController::class,
         'roles' => RoleController::class,
+        'admins' => AdminController::class,
+        'users' => UserController::class
     ]);
 
 });

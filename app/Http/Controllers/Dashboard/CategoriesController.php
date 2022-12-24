@@ -23,7 +23,7 @@ class CategoriesController extends Controller
     public function index()
     {
 
-        if (Gate::denies('category.view')) {
+        if (Gate::denies('categories.view')) {
             abort(403);
         }
 
@@ -85,7 +85,7 @@ $categories = Category::with('parent')
      */
     public function create()
     {
-        if (! Gate::allows('category.create')) {
+        if (! Gate::allows('categories.create')) {
             abort (403);
         }
 
@@ -103,7 +103,7 @@ $categories = Category::with('parent')
     public function store(CategoryRequest $request)
     {
 
-        Gate::authorize('category.create');
+        Gate::authorize('categories.create');
         // validation in CategoryRequset
         // $request->validate(Category::rules());
 
@@ -149,7 +149,7 @@ $categories = Category::with('parent')
     public function edit($id)
     {
 
-        Gate::authorize('category.update');
+        Gate::authorize('categories.update');
 
         try {
             $category = Category::findOrFail($id);
@@ -212,7 +212,7 @@ $categories = Category::with('parent')
     public function destroy($id)
     {
 
-        Gate::authorize('category.dalete');
+        Gate::authorize('categories.dalete');
 
         $category = Category::findOrFail($id);
         $category->delete();

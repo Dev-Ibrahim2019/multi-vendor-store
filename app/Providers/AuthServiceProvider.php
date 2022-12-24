@@ -15,6 +15,13 @@ class AuthServiceProvider extends ServiceProvider
      */
     protected $policies = [
         // 'App\Models\Model' => 'App\Policies\ModelPolicy',
+
+        // 'App\Models\Product' => 'App\Policies\ProductPolicy',
+
+        // 'App\Models\Product' => 'App\Policies\ModelPolicy',
+        // 'App\Models\Role' => 'App\Policies\ModelPolicy',
+        // 'App\Models\Order' => 'App\Policies\ModelPolicy',
+
     ];
 
 
@@ -34,6 +41,12 @@ class AuthServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->registerPolicies();
+
+        Gate::before(function ($user, $ability) {
+            if ($user->super_admin) {
+                return true;
+            }
+        });
 
         foreach ($this->app->make('abilities') as $code => $label) {
             Gate::define($code, function ($user) use ($code) {

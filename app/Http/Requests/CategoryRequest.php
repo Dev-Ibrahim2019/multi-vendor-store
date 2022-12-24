@@ -16,9 +16,9 @@ class CategoryRequest extends FormRequest
     public function authorize()
     {
         if ($this ->route('category')) {
-            return Gate::allows('category.update');
+            return Gate::allows('categories.update');
         }
-        return Gate::allows('category.create');
+        return Gate::allows('categories.create');
     }
 
     /**

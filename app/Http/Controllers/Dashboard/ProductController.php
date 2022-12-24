@@ -19,6 +19,8 @@ class ProductController extends Controller
      */
     public function index()
     {
+        $this->authorize('view-any', Product::class);
+        
         // $products = Product::withoutGlobalScope('store')->paginate();
 
         // $products = DB::table('products')
@@ -38,6 +40,8 @@ class ProductController extends Controller
      */
     public function create()
     {
+        $this->authorize('create', Product::class);
+
         $product = new Product();
         $tags = implode($product->tags()->pluck('name')->toArray());
         return view('dashboard.products.create', compact('product', 'tags'));
@@ -51,6 +55,8 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
+        $this->authorize('create', Product::class);
+
         $request->merge([
             'slug' => Str::slug($request->post('name')),
         ]);
@@ -106,7 +112,8 @@ class ProductController extends Controller
      */
     public function show($id)
     {
-        //
+        $product = Product::findOrFail($id);
+        $this->authorize('view', $product);
     }
 
 
@@ -119,6 +126,7 @@ class ProductController extends Controller
     public function edit($id)
     {
         $product = Product::findOrFail($id);
+        $this->authorize('update', $product);
         $tags = implode(',', $product->tags()->pluck('name')->toArray());
         return view('dashboard.products.edit', compact('product', 'tags'));
     }
@@ -132,6 +140,8 @@ class ProductController extends Controller
      */
     public function update(Request $request, Product $product)
     {
+        $this->authorize('update', $product);
+
         $data = $request->except(['image', 'tag']);
         $data['image'] = $this->uploadImage($request);
         $product->update($data);
@@ -168,6 +178,8 @@ class ProductController extends Controller
      */
     public function destroy(Product $product)
     {
+        $this->authorize('update', $product);
+
         $product->delete();
         return redirect()->back()->with(['message' => 'Deleted Successfully', 'type' => 'error']);
     }
